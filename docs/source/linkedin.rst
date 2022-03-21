@@ -306,3 +306,24 @@ When given company URL, bot will scrape all the employee data available
     "errors": "[]"
     }
 
+LinkedIn - Auto Withdrawal connect
+##################################
+
+This API goes to the withdraw section and removes withdraw.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___withdraw()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___withdraw();
+
