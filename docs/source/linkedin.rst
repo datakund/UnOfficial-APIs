@@ -46,7 +46,7 @@ This bot scrapes all the sent requests.
 LinkedIn - Scrape Post Comments
 ###############################
 
-This bot scrapes the comments of the post.
+This API scrapes the comments of the post.
 
 .. tabs::
 
@@ -69,17 +69,31 @@ This bot scrapes the comments of the post.
 .. code-block:: json
 
     {
-    "resume_variable": "n",
-    "success_score": "80",
+    "resume_variable": "6",
+    "success_score": "98",
     "body": [
         {
-            "commentor": "Stacey-Lee Anne Robberts",
-            "comment": "Jelsa Covelli you make sense. I agree with you."
+            "commentor": "Terence Battles",
+            "comment": "Do you think if I get a job there they could help me get my account back?  \ud83d\ude43\ud83d\ude02"
+        },
+        {
+            "commentor": "Abhishek Balawan",
+            "comment": "Hello Nathan, I am enthusiastic about working at @meta. Please go through my profile and let me know if I am suitable for any roles."
+        },
+        {
+            "commentor": "Akshita Aggarwal",
+            "comment": "Its my dream\u2764 maybe one day\u2764"
+        },
+        {
+            "commentor": "Swatika Das",
+            "comment": "Commenting for better reach"
+        },
+        {
+            "commentor": "swati maurya",
+            "comment": "Dreams \ud83e\udd72\ud83d\ude05but trying best to get this\ud83d\ude07"
         }
     ],
-    "errors": [
-        "'NoneType' object has no attribute 'replace'"
-    ]
+    "errors": "[\"'NoneType' object has no attribute 'replace'\"]"
     }
 
 LinkedIn - Scrape Company URLs
