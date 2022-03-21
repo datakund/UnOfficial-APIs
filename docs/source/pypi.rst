@@ -1,10 +1,10 @@
 Pypi
 ******************************
 
-Pypi Scraper
-############
+Pypi Results Scraper
+####################
 
-It searches keyword on pypi and scrapes  data
+It scrapes results from pypi.
 
 .. tabs::
 
