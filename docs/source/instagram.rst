@@ -4,7 +4,7 @@ Instagram
 Login Bot
 #########
 
-It logins to instagram and linkedin
+It logins to instagram and linkedin.
 
 .. tabs::
 
