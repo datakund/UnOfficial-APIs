@@ -222,3 +222,24 @@ This API opens followers list and scrapes all details.
     "errors": "[]"
     }
 
+linkedIn - Event Inviter
+########################
+
+For a created event, this API should invite people from LinkedIn
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___event___inviter(event_link='https://www.linkedin.com/events/6907227782129307648/analytics/',Search_by_name='anand')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___event___inviter(event_link,Search_by_name);
+
