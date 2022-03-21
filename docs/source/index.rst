@@ -12,6 +12,7 @@ Welcome to UnOfficial-APIs documentation!
 
    intro
    instagram
+   pypi
    contactus
 
 Indices and tables
