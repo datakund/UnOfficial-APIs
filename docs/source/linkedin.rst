@@ -159,3 +159,66 @@ This API searches a keyword and then filters with company and scrapes the data o
     "errors": "[\"'NoneType' object has no attribute 'replace'\"]"
     }
 
+Linkedin - Scrape Followers Details
+###################################
+
+This API opens followers list and scrapes all details.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___followers___insights()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___followers___insights();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "name": "Charita Mavuri",
+            "designation": "Automotive|Telematics|Infotainment|Electric Vehicle|CAN|CANoe|CANalyser",
+            "followers": "146 followers",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "Charita Mavuri",
+            "designation": "\ud83d\udcbbDigital Marketer\ud83d\udcf1Bulk Whatsapp #Bulkemailmarketing #Instagrammarketing #Facebookmarketing #Goggleadwords",
+            "followers": "22 followers",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "Charita Mavuri",
+            "designation": "Consultant at Deloitte India (Offices of the US)",
+            "followers": "80 followers",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "Charita Mavuri",
+            "designation": "Test Engineer at Tata Consultancy Services",
+            "followers": "19 followers",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "Charita Mavuri",
+            "designation": "Senior Digital Marketing Executive at Yellowka IQ",
+            "followers": "2.1K followers",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        }
+    ],
+    "errors": "[]"
+    }
+
