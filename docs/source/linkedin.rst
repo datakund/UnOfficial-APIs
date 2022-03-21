@@ -243,3 +243,66 @@ For a created event, this API should invite people from LinkedIn
         var datakund=require('datakund');
         datakund.linkedin___event___inviter(event_link,Search_by_name);
 
+LinkedIn - Scrape Companies Employees 
+######################################
+
+When given company URL, bot will scrape all the employee data available 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___companies___employees(Search='google')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___companies___employees(Search);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "name": "Namrata R.View Namrata R.\u2019s profile",
+            "designation": "Human Resources",
+            "city": "Hyderabad",
+            "profile_link": "https://www.linkedin.com/in/namrata-r-664769b6?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABisWmwBac7nP-N8JI1xdB7CrGg1SGhtOT0"
+        },
+        {
+            "name": "Ibrahim AView Ibrahim A\u2019S profile",
+            "designation": "Human Resources",
+            "city": "Hyderabad",
+            "profile_link": "https://www.linkedin.com/in/namrata-r-664769b6?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABisWmwBac7nP-N8JI1xdB7CrGg1SGhtOT0"
+        },
+        {
+            "name": "Ankit ParasharView Ankit Parashar\u2019s profile",
+            "designation": "Human Resources",
+            "city": "Hyderabad",
+            "profile_link": "https://www.linkedin.com/in/namrata-r-664769b6?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABisWmwBac7nP-N8JI1xdB7CrGg1SGhtOT0"
+        },
+        {
+            "name": "Moulica BharadwajView Moulica Bharadwaj\u2019s profile",
+            "designation": "Human Resources",
+            "city": "Hyderabad",
+            "profile_link": "https://www.linkedin.com/in/namrata-r-664769b6?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABisWmwBac7nP-N8JI1xdB7CrGg1SGhtOT0"
+        },
+        {
+            "name": "Diwakar S.View Diwakar S.\u2019s profile",
+            "designation": "Human Resources",
+            "city": "Hyderabad",
+            "profile_link": "https://www.linkedin.com/in/namrata-r-664769b6?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABisWmwBac7nP-N8JI1xdB7CrGg1SGhtOT0"
+        }
+    ],
+    "errors": "[]"
+    }
+
