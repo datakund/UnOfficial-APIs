@@ -4,7 +4,7 @@ Pypi
 Pypi Scraper
 ############
 
-It searches keyword on pypi and scrapes data
+It searches keyword on pypi and scrapes the data
 
 .. tabs::
 
