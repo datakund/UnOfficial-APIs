@@ -327,3 +327,24 @@ This API goes to the withdraw section and removes withdraw.
         var datakund=require('datakund');
         datakund.linkedin___auto___withdraw();
 
+LinkedIn - Auto Unfollow
+########################
+
+This API will unfollow the profile URL given
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___unfollow(cookies='cookies list',profile_link='https://www.linkedin.com/in/srushtigaur/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___unfollow(cookies,profile_link);
+
