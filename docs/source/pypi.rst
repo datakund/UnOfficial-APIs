@@ -4,7 +4,7 @@ Pypi
 Pypi Results Scraper
 ####################
 
-It scrapes results from pypi.
+It scrapes search results from pypi.
 
 .. tabs::
 
@@ -22,8 +22,7 @@ It scrapes results from pypi.
         var datakund=require('datakund');
         datakund.pypi(Search_projects);
 
-Response Data
-##############
+**Response Data**
 
 .. code-block:: json
 
