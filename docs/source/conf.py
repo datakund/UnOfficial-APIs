@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'UnOfficial-APIs'
+project = 'Unofficial-APIs'
 copyright = '2022, datakund'
 author = 'datakund'
 
