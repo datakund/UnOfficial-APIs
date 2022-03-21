@@ -348,3 +348,24 @@ This API will unfollow the profile URL given
         var datakund=require('datakund');
         datakund.linkedin___auto___unfollow(cookies,profile_link);
 
+LinkedIn - Auto Unconnect Connections
+#####################################
+
+This API will go to LinkedIn connections and Unconnects them.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___unconnect()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___unconnect();
+
