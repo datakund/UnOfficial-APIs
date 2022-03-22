@@ -14,6 +14,7 @@ Welcome to Unofficial-APIs documentation!
    instagram
    pypi
    linkedin
+   facebook
    contactus
 
 Indices and tables
