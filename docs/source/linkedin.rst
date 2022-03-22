@@ -558,3 +558,24 @@ This API accepts all the invitations received in your LinkedIn profile.
         var datakund=require('datakund');
         datakund.linkedin___accept___invitations(cookies);
 
+LinkedIn - Scrape Profile URLs
+##############################
+
+This API searches and scrapes the profile URLs for given keyword from the search results.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___profile___url___finder()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___profile___url___finder();
+
