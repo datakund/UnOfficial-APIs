@@ -226,3 +226,21 @@ This twitter URL, scrapes profile details when given profile URL.
         var datakund=require('datakund');
         datakund.twitter__profile__scraper(profile url);
 
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "following ": "260",
+        "profile name": "Pawan Kalyan",
+        "profile handle": "@PawanKalyan",
+        "followers": "4.7M",
+        "description ": "Jai Hind !!",
+        "joined": "Joined August 2014"
+    },
+    "errors": "[]"
+    }
+
