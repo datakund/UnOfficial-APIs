@@ -403,3 +403,24 @@ This Twitter API scrapes all the following profiles when given a twitter profile
     "errors": "[\"'href'\"]"
     }
 
+Twitter - Auto Retweet Post 
+############################
+
+When given input URL of post, the API will automatically retweets it. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__auto__retweeter(tweet url='https://twitter.com/home')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__auto__retweeter(tweet url);
+
