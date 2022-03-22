@@ -43,3 +43,24 @@ This twitter API will scrape the top results of the given keyword.
         var datakund=require('datakund');
         datakund.twitter__top__results(Search_Twitter);
 
+Twitter - Profile URL Scraper
+#############################
+
+This twitter API, searches the keyword in the twitter and scrape all the profile details.  
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__search__profiles(Search_Twitter='mayor')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__search__profiles(Search_Twitter);
+
