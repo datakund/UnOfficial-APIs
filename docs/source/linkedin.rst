@@ -453,3 +453,24 @@ This API will go to a connect profiles of the profile URL given as input and aut
         var datakund=require('datakund');
         datakund.linkedin___auto___endorse(profile_link);
 
+LinkedIn - Auto Commenter 
+##########################
+
+This API goes to the profile posts and comments all the posts.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___commenter___run(profile_link='https://www.linkedin.com/in/muskan-goel-559bb7185/',Add_a_comment='hi there nice post')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___commenter___run(profile_link,Add_a_comment);
+
