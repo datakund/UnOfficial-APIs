@@ -22,3 +22,24 @@ This twitter API will scrape all the tweets in the profile URL given in the inpu
         var datakund=require('datakund');
         datakund.twitter__tweets__from__profile(profile url);
 
+Twitter - Scrape Top Results
+############################
+
+This twitter API will scrape the top results of the given keyword.   
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__top__results(Search_Twitter='twenty')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__top__results(Search_Twitter);
+
