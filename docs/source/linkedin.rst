@@ -432,3 +432,24 @@ When given URL of a profile, this API will automatically follows the given profi
         var datakund=require('datakund');
         datakund.linkedin___auto___follow(profile link to follow);
 
+LinkedIn - Auto Endorse
+#######################
+
+This API will go to a connect profiles of the profile URL given as input and auto endorse all the skills.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___endorse(profile_link='https://www.linkedin.com/in/deepakagnihotri19/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___endorse(profile_link);
+
