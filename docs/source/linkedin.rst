@@ -579,3 +579,43 @@ This API searches and scrapes the profile URLs for given keyword from the search
         var datakund=require('datakund');
         datakund.linkedin___profile___url___finder();
 
+LinkedIn - Scrape Company Details
+#################################
+
+This API will scrape company details from the given LinkedIn company URL.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___companies___info(linkedin_url='chrome://new-tab-page/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___companies___info(linkedin_url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "employees_link": "https://chromeenterprise.google/",
+        "followers": "39,672 followers",
+        "profile_img_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQEOyhqF9PPyYQ/company-logo_200_200/0/1595968418149?e=1655942400&v=beta&t=OLq8oZHb3u6OnmyT7BcHP1oSzwkidT-VUTEovw0hEMI",
+        "cover_image_url": "https://media-exp1.licdn.com/dms/image/C4D1BAQH6MoETYkLdNg/company-background_10000/0/1595883574596?e=1647925200&v=beta&t=EpyymnxX-PkAhZEtpZI6QLLembhqqKpQa3SFogHcZrE",
+        "about": "Google Chrome Enterprise provides the OS, browser, and devices your business needs to cloud-power your workforce.It empowers IT with the cloud-first, user-friendly business capabilities of Chrome OS, Chrome Browser, and Chrome\ndevices. For more than a decade, Google has provided the reliable and secure Chrome Browser. Now with t...see more\n... see more",
+        "location": "39,672 followers",
+        "type": "Information Technology & Services"
+    },
+    "errors": "[]"
+    }
+
