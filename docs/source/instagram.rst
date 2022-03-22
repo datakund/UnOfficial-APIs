@@ -96,3 +96,24 @@ This API Scrapes all the results for the keyword given in the Instagram.
     "errors": "[]"
     }
 
+Instagram - Scrape all the tagged post URL 
+###########################################
+
+This API will scrape all the tagged post URL, when given profile URL in the input. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.insta__tagged__url(profile url='https://www.instagram.com/9gag/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.insta__tagged__url(profile url);
+
