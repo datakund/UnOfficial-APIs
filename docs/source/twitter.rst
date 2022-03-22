@@ -244,3 +244,24 @@ This twitter URL, scrapes profile details when given profile URL.
     "errors": "[]"
     }
 
+Twitter - Auto like post  
+##########################
+
+This Twitter API, will auto like the post, when given post URL as input.  
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__like(tweet url='https://twitter.com/urstrulyMahesh/status/1501055580232110080')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__like(tweet url);
+
