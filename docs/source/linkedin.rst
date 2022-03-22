@@ -222,7 +222,7 @@ This API opens followers list and scrapes all details.
     "errors": "[]"
     }
 
-linkedIn - Event Inviter
+LinkedIn - Event Inviter
 ########################
 
 For a created event, this API should invite people from LinkedIn
