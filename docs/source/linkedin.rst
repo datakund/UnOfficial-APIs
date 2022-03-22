@@ -25,7 +25,7 @@ It opens url.
 LinkedIn - Sent Requests
 ########################
 
-This bot scrapes all the sent requests.
+This API scrapes all the sent requests.
 
 .. tabs::
 
