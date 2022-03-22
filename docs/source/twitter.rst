@@ -85,6 +85,63 @@ This twitter API will scrape the top results of the given keyword.
         var datakund=require('datakund');
         datakund.twitter__top__results(Search_Twitter);
 
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "2",
+    "success_score": "100",
+    "body": [
+        {
+            "comments": "60",
+            "profile url": "https://twitter.com/kdramashin",
+            "description": "if your girl watches twenty five twenty one, that's not your girl bro. that's baek yijin's girl.",
+            "profile name": "shin \u00b2\u2075\u00b2\u00b9",
+            "profile handle": "16.8K",
+            "retweets": "6,614",
+            "likes": "16.8K"
+        },
+        {
+            "comments": "68",
+            "profile url": "https://twitter.com/ringer",
+            "description": "In 2002, there was nothing cooler and more cutting edge than \u2018Blade II.\u2019 Twenty years later, there still might not be.\n@johnwilmeswords:",
+            "profile name": "theringer.com",
+            "profile handle": "Twenty years ago, Wesley Snipes and Guillermo del Toro paved the way for everything from the Marvel Cinematic Universe to \u2018Twilight\u2019",
+            "retweets": "13",
+            "likes": "68"
+        },
+        {
+            "comments": "1,243",
+            "profile url": "https://twitter.com/dramasmoments",
+            "description": "\u2500 twenty-five twenty-one (2022)",
+            "profile name": "\ufe0e \ufe0e",
+            "profile handle": "1,243",
+            "retweets": "371",
+            "likes": "1,243"
+        },
+        {
+            "comments": "6",
+            "profile url": "https://twitter.com/Nonton_Kdrama",
+            "description": "Business Proposal  Twenty Five Twenty One. #BusinessProposal #BusinessProposalEp7 #TwentyFiveTwentyOne",
+            "profile name": "Nonton Drakor",
+            "profile handle": "8,546",
+            "retweets": "3,593",
+            "likes": "8,546"
+        },
+        {
+            "comments": "1",
+            "profile url": "https://twitter.com/kimtaeri_ifc",
+            "description": "Dalam rangka ulang tahun Kim Taeri tanggal 24 April 2022.Kami berencana mengirimkan ucapan selamatsekalian Congratulation Gift \"Twenty Five Twenty One\" yang sudah selesai tayang.\n#KimTaeri #TwentyFiveTwentyOne #ProjectForTaeri",
+            "profile name": "Kim Tae Ri Indonesia \uae40\ud0dc\ub9ac",
+            "profile handle": "89",
+            "retweets": "43",
+            "likes": "89"
+        }
+    ],
+    "errors": "[]"
+    }
+
 Twitter - Profile URL Scraper
 #############################
 
