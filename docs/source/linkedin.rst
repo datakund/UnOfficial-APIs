@@ -22,7 +22,7 @@ It opens url.
         var datakund=require('datakund');
         datakund.linkedintest();
 
-LinkedIn - sent requests
+LinkedIn - Sent Requests
 ########################
 
 This bot scrapes all the sent requests.
