@@ -64,3 +64,24 @@ This twitter API, searches the keyword in the twitter and scrape all the profile
         var datakund=require('datakund');
         datakund.twitter__search__profiles(Search_Twitter);
 
+Twitter - Scrape Profile Details 
+#################################
+
+This twitter URL, scrapes profile details when given profile URL.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__profile__scraper(profile url='https://twitter.com/PawanKalyan')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__profile__scraper(profile url);
+
