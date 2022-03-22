@@ -537,3 +537,24 @@ This API scrapes profile activity when profile URL is given in the input.
     "errors": "[]"
     }
 
+LinkedIn - Auto Accept Invitations
+##################################
+
+This API accepts all the invitations received in your LinkedIn profile. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___accept___invitations(cookies='cookies list')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___accept___invitations(cookies);
+
