@@ -163,6 +163,48 @@ This twitter API, searches the keyword in the twitter and scrape all the profile
         var datakund=require('datakund');
         datakund.twitter__search__profiles(Search_Twitter);
 
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": [
+        {
+            "name": "NYC Mayor's Office",
+            "description": "Live from City Hall and the greatest city in the world. The team of @NYCMayor Eric Adams",
+            "handle ": "@NYCMayorsOffice",
+            "url": "https://twitter.com/NYCMayorsOffice"
+        },
+        {
+            "name": "Mayor Muriel Bowser",
+            "description": "Official account of the Mayor of Washington, DC. Together, let's work to give every Washingtonian a #FairShot. Tweets from Mayor Bowser signed MMB.",
+            "handle ": "@MayorBowser",
+            "url": "https://twitter.com/MayorBowser"
+        },
+        {
+            "name": "U.S. Mayors",
+            "description": "The United States Conference of Mayors. Official non-partisan organization of cities 30,000 in population and larger, each represented by their mayor.",
+            "handle ": "@usmayors",
+            "url": "https://twitter.com/usmayors"
+        },
+        {
+            "name": "DC Mayor's Office",
+            "description": "The Official Twitter Account of the Executive Office of @MayorBowser. Stay tuned for news and updates on the happenings from the Wilson Building and DC Govt.",
+            "handle ": "@dcmayorsoffice",
+            "url": "https://twitter.com/dcmayorsoffice"
+        },
+        {
+            "name": "MAYOR",
+            "description": "I DO COOL THINGS",
+            "handle ": "@_MAYOR_",
+            "url": "https://twitter.com/_MAYOR_"
+        }
+    ],
+    "errors": "[]"
+    }
+
 Twitter - Scrape Profile Details 
 #################################
 
