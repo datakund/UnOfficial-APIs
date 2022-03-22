@@ -265,3 +265,78 @@ This Twitter API, will auto like the post, when given post URL as input.
         var datakund=require('datakund');
         datakund.twitter__like(tweet url);
 
+Twitter - Scrape Hashtag Posts 
+###############################
+
+This Twitter API, searches a hashtag and scrapes all the post details in search results.  
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__hashtag__posts(Search_Twitter='#cat')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__hashtag__posts(Search_Twitter);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "98",
+    "body": [
+        {
+            "description": "",
+            "profile name": "",
+            "handle": "",
+            "comments": "",
+            "retweets": "",
+            "likes": ""
+        },
+        {
+            "description": "See top Tweets about these",
+            "profile name": "See top Tweets about these",
+            "handle": "See top Tweets about these",
+            "comments": "Related Topic",
+            "retweets": "Related Topic",
+            "likes": "Related Topic"
+        },
+        {
+            "comments": "Follow",
+            "profile url": "https://twitter.com/i/topics/839543325212319744",
+            "description": "Follow",
+            "profile name": "Follow",
+            "handle": "Animals",
+            "retweets": "Follow",
+            "likes": "Follow"
+        },
+        {
+            "description": "",
+            "profile name": "",
+            "handle": "",
+            "comments": "",
+            "retweets": "",
+            "likes": ""
+        },
+        {
+            "comments": "71",
+            "profile url": "https://twitter.com/kit_sox",
+            "description": "Give me five  #cat #catlovers",
+            "profile name": "KitNSox",
+            "handle": "1,940",
+            "retweets": "184",
+            "likes": "1,940"
+        }
+    ],
+    "errors": "[\"'href'\"]"
+    }
+
