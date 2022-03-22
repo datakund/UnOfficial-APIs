@@ -340,3 +340,66 @@ This Twitter API, searches a hashtag and scrapes all the post details in search 
     "errors": "[\"'href'\"]"
     }
 
+Twitter - Scrape Following profiles 
+####################################
+
+This Twitter API scrapes all the following profiles when given a twitter profile URL in the input.  
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__followers(url='https://twitter.com/urstrulyMahesh')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__followers(url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "99",
+    "body": [
+        {
+            "name": "KTR",
+            "description": "Personal account of Working President of TRS | Minister for Municipal Admin & Urban Dev, Industry & Commerce, ITE&C | MLA from Siricilla, Telangana",
+            "handle": "@KTRTRS",
+            "url": "https://twitter.com/KTRTRS"
+        },
+        {
+            "name": "rajamouli ss",
+            "description": "film director",
+            "handle": "@ssrajamouli",
+            "url": "https://twitter.com/ssrajamouli"
+        },
+        {
+            "name": "DEVI SRI PRASAD",
+            "description": "Music Composer,Singer,Performer.. Composer of Dhinka Chika, Ringa Ringa, AaAnte Amalapuram,Daddy Mummy etc..",
+            "handle": "@ThisIsDSP",
+            "url": "https://twitter.com/ThisIsDSP"
+        },
+        {
+            "name": "Anil Ravipudi",
+            "description": "Film Writer & Director",
+            "handle": "@AnilRavipudi",
+            "url": "https://twitter.com/AnilRavipudi"
+        },
+        {
+            "name": "BBC Earth",
+            "description": "BBC Earth brings you face to face with nature, science & space.",
+            "handle": "@BBCEarth",
+            "url": "https://twitter.com/BBCEarth"
+        }
+    ],
+    "errors": "[\"'href'\"]"
+    }
+
