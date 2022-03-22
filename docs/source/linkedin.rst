@@ -411,3 +411,24 @@ When given profile URL, this API likes all the posts given.
         var datakund=require('datakund');
         datakund.linkedin___auto___liker(company posts url);
 
+LinkedIn - Auto Follow
+######################
+
+When given URL of a profile, this API will automatically follows the given profile.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___follow(profile link to follow='https://www.linkedin.com/in/nealpann/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___follow(profile link to follow);
+
