@@ -474,3 +474,66 @@ This API goes to the profile posts and comments all the posts.
         var datakund=require('datakund');
         datakund.linkedin___auto___commenter___run(profile_link,Add_a_comment);
 
+LinkedIn - Scrape Activities 
+#############################
+
+This API scrapes profile activity when profile URL is given in the input. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___activities___extractor(profile_link='https://www.linkedin.com/in/muskan-goel-559bb7185/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___activities___extractor(profile_link);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": [
+        {
+            "profile name": "https://www.linkedin.com/company/andaaz-fashion/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A26669843",
+            "post description": "I\u2019m #hiring. Know anyone who might be interested?#customerservice #customersupport #customersupportexecutive #customerservicejobs #customercareexecutive #customersupportjobs",
+            "activity": "Status is offline\nMuskan Goel\n\u2022 3rd+\nHR Executive - Actively Hiring for Customer Service Executives\n4d \u2022\n4 days ago",
+            "post date": "4d \u2022"
+        },
+        {
+            "profile name": "https://www.linkedin.com/company/andaaz-fashion/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A26669843",
+            "post description": "Must have an outfit in your wardrobe is Anarkali..Product Code: LSTV02550.For More Information Tap Below The Given Link:.https://lnkd.in/d4ucKus9.#fashionwithandaaz #ethnicwear #georgette #usa #andaazfashion",
+            "activity": "Muskan Goel likes this",
+            "post date": "5d \u2022"
+        },
+        {
+            "profile name": "https://www.linkedin.com/company/andaaz-fashion/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A26669843",
+            "post description": "Let\u2019s color our differences and water our dying hopes, Let\u2019s reunite and celebrate this festival of togetherness..Product code: LSTV01252 ,5128,2003.Shop Now.#fashionwithandaaz #holi #holifestivalofcolours #colors",
+            "activity": "Muskan Goel likes this",
+            "post date": "1w \u2022"
+        },
+        {
+            "profile name": "https://www.linkedin.com/company/andaaz-fashion/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A26669843",
+            "post description": "Tag women of your life who support you who inspires you and wish them Happy women's day.Product code: Dmv11089,2006,LSTV03436,LSTV01035.Get Extra 10% off on all Ethnic Wear.\u00a0Discount Code: NEW10.#fashionwithandaaz #womenempowerment #InternationalWomensDay2022",
+            "activity": "Muskan Goel likes this",
+            "post date": "1w \u2022"
+        },
+        {
+            "profile name": "https://www.linkedin.com/company/andaaz-fashion/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A26669843",
+            "post description": "I'm Still Not Over On This Lehenga With Jacket Fit.Product Code: 1946.For More Information Tap Below The Given Link:.https://lnkd.in/dECYAuvA.#FashionWithAndaaz #lehengacholi #usa #ethnicwear #andaazfashion",
+            "activity": "Muskan Goel likes this",
+            "post date": "2w \u2022"
+        }
+    ],
+    "errors": "[]"
+    }
+
