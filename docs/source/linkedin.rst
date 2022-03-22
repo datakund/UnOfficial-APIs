@@ -246,7 +246,7 @@ For a created event, this API should invite people from LinkedIn
 LinkedIn - Scrape Companies Employees 
 ######################################
 
-When given company URL, bot will scrape all the employee data available 
+When given company URL, this API will scrape all the employee data available 
 
 .. tabs::
 
