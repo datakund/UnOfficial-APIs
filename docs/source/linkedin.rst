@@ -640,7 +640,7 @@ This API will message the profile when given profile name.
         var datakund=require('datakund');
         datakund.linkedin___message___sender(cookies,profile_link,Write_a_message);
 
-LinkedIn Bot - scrape connections
+LinkedIn Bot - Scrape Connections
 #################################
 
 This LinkedIn API scrapes all the details of your connections when you enter cookies.
