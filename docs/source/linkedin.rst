@@ -390,3 +390,24 @@ This API will Auto Post on LinkedIn when test to post.
         var datakund=require('datakund');
         datakund.linkedin___auto___poster(What_do_you_want_to_talk_about);
 
+LinkedIn - Auto Like Post
+#########################
+
+When given profile URL, this API likes all the posts given.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___liker(company posts url='https://www.linkedin.com/company/entab-newdelhi/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___liker(company posts url);
+
