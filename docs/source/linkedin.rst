@@ -159,8 +159,8 @@ This API searches a keyword and then filters with company and scrapes the data o
     "errors": "[\"'NoneType' object has no attribute 'replace'\"]"
     }
 
-Linkedin - Scrape Followers Details
-###################################
+LinkedIn - Scrape Followers Detailss
+####################################
 
 This API opens followers list and scrapes all details.
 
