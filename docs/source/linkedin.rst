@@ -661,3 +661,24 @@ This LinkedIn API scrapes all the details of your connections when you enter coo
         var datakund=require('datakund');
         datakund.linkedin___contacts___extractor(cookies);
 
+LinkedIn - Profile Scraper 
+###########################
+
+This LinkedIn API, scrapes profile details, when given profile URL in the input. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___profile___scraper(profile_link='https://www.linkedin.com/in/ramaneffect/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___profile___scraper(profile_link);
+
