@@ -369,3 +369,24 @@ This API will go to LinkedIn connections and Unconnects them.
         var datakund=require('datakund');
         datakund.linkedin___auto___unconnect();
 
+LinkedIn - Auto Post
+####################
+
+This API will Auto Post on LinkedIn when test to post.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin___auto___poster(What_do_you_want_to_talk_about='Hi everyone')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin___auto___poster(What_do_you_want_to_talk_about);
+
