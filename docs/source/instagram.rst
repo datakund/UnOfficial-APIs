@@ -117,3 +117,24 @@ This API will scrape all the tagged post URL, when given profile URL in the inpu
         var datakund=require('datakund');
         datakund.insta__tagged__url(profile url);
 
+Instagram - Auto Comment Post
+#############################
+
+This API when given post URL and comment as input, the bot will visit the post and auto comment the post. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram__auto__commentor(post url='https://www.instagram.com/9gag/',Add_a_comment='nice')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram__auto__commentor(post url,Add_a_comment);
+
