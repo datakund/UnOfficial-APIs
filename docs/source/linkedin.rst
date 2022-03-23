@@ -1046,3 +1046,56 @@ This API, when opened job search results page, will scrape all the job URLs in t
     "errors": "[]"
     }
 
+LinkedIn - Posts Results
+########################
+
+When opened post search results page, this API will scrape all the posts details in that page.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_posts_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_posts_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "61",
+    "body": [
+        {
+            "User Link": "https://www.linkedin.com/feed/",
+            "Post Text": "Home"
+        },
+        {
+            "User Link": "https://www.linkedin.com/mynetwork/",
+            "Post Text": "My Network"
+        },
+        {
+            "User Link": "https://www.linkedin.com/jobs/",
+            "Post Text": "Jobs"
+        },
+        {
+            "User Link": "https://www.linkedin.com/messaging/",
+            "Post Text": "Messaging"
+        },
+        {
+            "User Link": "https://www.linkedin.com/notifications/",
+            "Post Text": "Notifications"
+        }
+    ],
+    "errors": "[\"'href'\"]"
+    }
+
