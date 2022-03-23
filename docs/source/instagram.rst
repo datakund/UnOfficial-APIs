@@ -186,3 +186,24 @@ This API will Auto-Follow Instagram profile, when given profile URL as input.
         var datakund=require('datakund');
         datakund.instagram_autofollow(profile url);
 
+Instagram - Auto-Like Post
+##########################
+
+This Bot will Auto-Like post, when given post URL.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram_auto_like(post_url='https://www.instagram.com/p/CbEmdpwA1Zp/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram_auto_like(post_url);
+
