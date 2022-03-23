@@ -759,3 +759,24 @@ This LinkedIn API, scrapes profile details, when given profile URL in the input.
         var datakund=require('datakund');
         datakund.linkedin___profile___scraper(profile_link);
 
+Linkedin Click on Next Page
+###########################
+
+It clicks on next button
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_click_next()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_click_next();
+
