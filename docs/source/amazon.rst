@@ -85,3 +85,24 @@ This API will select brand on the amazon search results page.
         var datakund=require('datakund');
         datakund.amazon_select_brand(Brand);
 
+Amazon - Select Category
+########################
+
+It selects the category passed in category when search is made.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_select_category(category='search-alias=stripbooks-intl-ship')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_select_category(category);
+
