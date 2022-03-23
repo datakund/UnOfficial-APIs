@@ -1291,3 +1291,61 @@ when opened LinkedIn companies search result page, the API will scrape all the c
     "errors": "[]"
     }
 
+Linkedin - Group Results
+########################
+
+when opened a groups search results page, this API will scrape all the group details in that page
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_groups_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_groups_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Title": "Zoho CRM",
+            "Group Link": "https://www.linkedin.com/groups/52947",
+            "Members": "Zoho CRM"
+        },
+        {
+            "Title": "Zoho Creator Network",
+            "Group Link": "https://www.linkedin.com/groups/2551118",
+            "Members": "Zoho Creator Network"
+        },
+        {
+            "Title": "Zoho CRM (Spanish)",
+            "Group Link": "https://www.linkedin.com/groups/4032557",
+            "Members": "Zoho CRM (Spanish)"
+        },
+        {
+            "Title": "ZOHO CRM Professionals Group",
+            "Group Link": "https://www.linkedin.com/groups/1950317",
+            "Members": "ZOHO CRM Professionals Group"
+        },
+        {
+            "Title": "Jobs @ ZOHO",
+            "Group Link": "https://www.linkedin.com/groups/2351418",
+            "Members": "Jobs @ ZOHO"
+        }
+    ],
+    "errors": "[]"
+    }
+
