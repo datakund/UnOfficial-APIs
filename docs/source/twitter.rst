@@ -787,3 +787,51 @@ This Twitter API will scrape all the tweet URL in the opened browser
         var datakund=require('datakund');
         datakund.twitter_get_tweet_links();
 
+Twitter - Save Image URL
+########################
+
+This twitter API will scrape image URL, in the opened browser 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_save_image_links()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_save_image_links();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Imagelink": "https://pbs.twimg.com/media/FOgSUMGaAAIYJ87?format=jpg&name=small"
+        },
+        {
+            "Imagelink": "https://pbs.twimg.com/media/FOgSUMBaQAIy9JR?format=jpg&name=small"
+        },
+        {
+            "Imagelink": "https://pbs.twimg.com/media/FOgFuLhaIAE1f7m?format=jpg&name=small"
+        },
+        {
+            "Imagelink": "https://pbs.twimg.com/media/FOgFuLgagAUPAad?format=jpg&name=small"
+        },
+        {
+            "Imagelink": "https://pbs.twimg.com/media/FOgFuLhaQAAo899?format=jpg&name=small"
+        }
+    ],
+    "errors": "[]"
+    }
+
