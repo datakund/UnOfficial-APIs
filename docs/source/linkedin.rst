@@ -1410,3 +1410,24 @@ When given post URL in the input, the API will scrape all the details of the pos
     "errors": "[]"
     }
 
+Linkedin - Click Load More
+##########################
+
+When opened a search results page, this API will click load more.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_click_load_more()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_click_load_more();
+
