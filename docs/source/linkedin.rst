@@ -780,3 +780,24 @@ It clicks on next button
         var datakund=require('datakund');
         datakund.linkedin_click_next();
 
+LinkedIn - login
+################
+
+This API will login Linkedin when given username and password
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_login()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_login();
+
