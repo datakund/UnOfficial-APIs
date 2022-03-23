@@ -579,14 +579,14 @@ This API accepts all the invitations received in your LinkedIn profile.
         #pip install bot_studio
         from bot_studio import *
         dk=bot_studio.new()
-        dk.linkedin___accept___invitations(cookies='cookies list')
+        dk.linkedin___accept___invitations()
 
    .. code-tab:: javascript
 		 NodeJS
    
          //npm i datakund
         var datakund=require('datakund');
-        datakund.linkedin___accept___invitations(cookies);
+        datakund.linkedin___accept___invitations();
 
 LinkedIn - Scrape Profile URLs
 ##############################
