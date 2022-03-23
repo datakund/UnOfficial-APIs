@@ -1099,3 +1099,24 @@ When opened post search results page, this API will scrape all the posts details
     "errors": "[\"'href'\"]"
     }
 
+LinkedIn - Comment on Post
+##########################
+
+This API will comment on the post, when given post URL and comment to post in the input.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_comment_on_post(post_link='https://www.linkedin.com/posts/jobs44you_covid19-covid-activity-6733590442660782080-YL9r',comment='a')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_comment_on_post(post_link,comment);
+
