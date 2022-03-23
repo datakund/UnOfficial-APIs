@@ -338,3 +338,41 @@ This API will Scrape comments on the Instagram post.
     "errors": "[]"
     }
 
+Instagram - Scrape profile details 
+###################################
+
+This API scrapes Instagram profile details, when given Instagram profile URL.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram__profile__scraper(profile url='https://www.instagram.com/9gag/tagged/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram__profile__scraper(profile url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "profile name": "9gag",
+        "no of posts": "29,102",
+        "followers": "58.2m",
+        "description ": "9GAG: Go Fun The WorldApp PageBuilding Memeland, one meme at a time. Join our discord now\ud83d\udc47\ud83c\udffb discord.gg/memeland",
+        "following": "30"
+    },
+    "errors": "[]"
+    }
+
