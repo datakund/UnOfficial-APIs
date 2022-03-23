@@ -804,7 +804,7 @@ This API will login LinkedIn
 LinkedIn - Job Profile Details
 ##############################
 
-This LinkedIn API, will scrape job details when given "LinkedIn job Post URL"
+This LinkedIn API, will scrape job details when given "LinkedIn job Post URL" in the input
 
 .. tabs::
 
