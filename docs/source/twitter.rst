@@ -835,3 +835,24 @@ This twitter API will scrape image URL, in the opened browser
     "errors": "[]"
     }
 
+Twitter - Login with Cookies
+############################
+
+When given Twitter login cookies in the input, this API will login through twitter.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_login_cookie(cookies='cookies list')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_login_cookie(cookies);
+
