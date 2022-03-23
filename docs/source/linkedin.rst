@@ -1154,3 +1154,24 @@ When given profile URL, bot scrapes all the messages.
     "errors": "[]"
     }
 
+LinkedIn - Search Companies
+###########################
+
+When given a input keyword, the API will search the keyword in Linkedin and apply companies filter.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_search_companies()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_search_companies();
+
