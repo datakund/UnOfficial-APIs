@@ -801,3 +801,47 @@ This API will login LinkedIn
         var datakund=require('datakund');
         datakund.linkedin_login();
 
+LinkedIn - Job Profile Details
+##############################
+
+This LinkedIn API, will scrape job details when given "LinkedIn job Post URL"
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_get_job_profile(job_link='https://www.linkedin.com/jobs/view/2303820097/?eBP=NotAvailableFromMidTier&refId=y8WRZ%2FI57CBKvwOuJPqq8w%3D%3D&trackingId=sdU1bdzpF7mMolPbdczmzQ%3D%3D&trk=flagship3_search_srp_jobs')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_get_job_profile(job_link);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "Industry": "November 9, 2020\nNovember 9, 2020\nNovember 9, 2020\nNovember 9, 2020\nNovember 9, 2020",
+        "Company Name": "Apple",
+        "Experience": "Summary",
+        "Seniority Level": "",
+        "Employment Type": "November 9, 2020",
+        "Title": "Management Associate, Apple Media Services \u2013 India",
+        "Published": "2 weeks ago",
+        "Applicants": "Save Management Associate, Apple Media Services \u2013 India at Apple",
+        "Roles": "Questions?\nVisit our Help Center.\nManage your account and privacy\nGo to your Settings.",
+        "Job Functions": "Full-time\n10,001+ employees \u00b7 Computers and Electronics Manufacturing\nSee how you compare to 1,250 applicants. Try Premium for free\nActively recruiting",
+        "Location": "Mumbai, Maharashtra, India"
+    },
+    "errors": "[]"
+    }
+
