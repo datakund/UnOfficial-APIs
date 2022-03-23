@@ -517,3 +517,24 @@ This twitter API, Auto posts on twitter.
         var datakund=require('datakund');
         datakund.twitter__auto__post(Tweet_text,file_path_3);
 
+Twitter - Login
+###############
+
+This Twitter API will login to twitter when given username and password.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_login(username='m',password='ctrl+V')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_login(username,password);
+
