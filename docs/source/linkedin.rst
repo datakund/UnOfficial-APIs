@@ -929,3 +929,24 @@ This API will search a keyword given and applies job filter.
         var datakund=require('datakund');
         datakund.linkedin_enter_job_location();
 
+Linkedin - Send Connection 
+###########################
+
+This API will send connect request to the profile URL given in the input.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_send_connection(profile_link='https://www.linkedin.com/in/vikas-gupta-56885b131')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_send_connection(profile_link);
+
