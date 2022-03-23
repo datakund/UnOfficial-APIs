@@ -22,3 +22,24 @@ This API logins to the amazon through credentials passed in email and password. 
         var datakund=require('datakund');
         datakund.amazon_login(login_url,email,password);
 
+Amazon - Logout
+###############
+
+This amazon API will logout of the amazon account.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_logout(home_url='https://www.amazon.com/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_logout(home_url);
+
