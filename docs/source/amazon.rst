@@ -64,3 +64,24 @@ This API will search a input keyword given in amazon.
         var datakund=require('datakund');
         datakund.amazon_search(keyword);
 
+Amazon - Select Brand
+#####################
+
+This API will select brand on the amazon search results page.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_select_brand(Brand='Nike')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_select_brand(Brand);
+
