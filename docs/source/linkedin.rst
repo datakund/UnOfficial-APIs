@@ -998,3 +998,51 @@ when opened a people search result page, this API will scrape all the profile UR
     "errors": "[]"
     }
 
+Linkedin - job Results
+######################
+
+This API, when opened job search results page, will scrape all the job URLs in the page.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_jobs_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_jobs_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Link": "/jobs/view/2946201792/?eBP=NotAvailableFromMidTier&recommendedFlavor=ACTIVELY_HIRING_COMPANY&refId=DSc9jeAc6mCCO%2BG%2FvnDBeQ%3D%3D&trackingId=P5C9ghCGQHE%2FdyM8ZCkH5g%3D%3D&trk=flagship3_search_srp_jobs"
+        },
+        {
+            "Link": "/jobs/view/2932825258/?eBP=NotAvailableFromMidTier&recommendedFlavor=ACTIVELY_HIRING_COMPANY&refId=DSc9jeAc6mCCO%2BG%2FvnDBeQ%3D%3D&trackingId=2PBtzRK3jPdHMPWOVsDb3A%3D%3D&trk=flagship3_search_srp_jobs"
+        },
+        {
+            "Link": "/jobs/view/2971881518/?eBP=NotAvailableFromMidTier&recommendedFlavor=IN_NETWORK&refId=DSc9jeAc6mCCO%2BG%2FvnDBeQ%3D%3D&trackingId=EXbZiNsoRTvOPX9rZn5utg%3D%3D&trk=flagship3_search_srp_jobs"
+        },
+        {
+            "Link": "/jobs/view/2946206006/?eBP=NotAvailableFromMidTier&recommendedFlavor=ACTIVELY_HIRING_COMPANY&refId=DSc9jeAc6mCCO%2BG%2FvnDBeQ%3D%3D&trackingId=BJA%2FsR9M0qjLsmxjKNY%2FuQ%3D%3D&trk=flagship3_search_srp_jobs"
+        },
+        {
+            "Link": "/jobs/view/2942224540/?eBP=NotAvailableFromMidTier&recommendedFlavor=ACTIVELY_HIRING_COMPANY&refId=DSc9jeAc6mCCO%2BG%2FvnDBeQ%3D%3D&trackingId=XlpFzI5OKvKS3l7GswmqlA%3D%3D&trk=flagship3_search_srp_jobs"
+        }
+    ],
+    "errors": "[]"
+    }
+
