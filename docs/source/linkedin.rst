@@ -1231,3 +1231,63 @@ This API when opened linkedin feed page will scrape all the feed post details.
     "errors": "[\"'href'\"]"
     }
 
+LinkedIn - Company Details
+##########################
+
+when opened LinkedIn companies search result page, the API will scrape all the companies details in the page.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_companies_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_companies_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Title": "Zoho"
+        },
+        {
+            "Title": "Zoho Recruit",
+            "Type": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "Followers": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "CompanyLink": "https://www.linkedin.com/company/zoho/"
+        },
+        {
+            "Title": "Zoho CRM",
+            "Type": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "Followers": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "CompanyLink": "https://www.linkedin.com/company/zohorecruit/"
+        },
+        {
+            "Title": "Zoho Creator",
+            "Type": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "Followers": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "CompanyLink": "https://www.linkedin.com/company/zohocrm/"
+        },
+        {
+            "Title": "Zoho People",
+            "Type": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "Followers": "Computer Software \u2022 Dubai, Dubai\n7.8K followers",
+            "CompanyLink": "https://www.linkedin.com/company/zohocreator/"
+        }
+    ],
+    "errors": "[]"
+    }
+
