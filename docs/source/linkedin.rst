@@ -783,7 +783,7 @@ It clicks on next button
 LinkedIn - login
 ################
 
-This API will login LinkedIn 
+This API will login LinkedIn, when given email ID and password in the input. 
 
 .. tabs::
 
