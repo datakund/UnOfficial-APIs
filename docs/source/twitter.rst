@@ -496,3 +496,24 @@ When given twitter handle, this API messages in twitter.
         var datakund=require('datakund');
         datakund.Twitter__Messenger(Search_people,input_0);
 
+Twitter - Auto post  
+#####################
+
+This twitter API, Auto posts on twitter. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter__auto__post(Tweet_text='hello how are you',file_path_3='file path')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter__auto__post(Tweet_text,file_path_3);
+
