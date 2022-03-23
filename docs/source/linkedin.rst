@@ -1476,3 +1476,24 @@ When opened search results of posts, this API scrapes all the post URLs.
     "errors": "[]"
     }
 
+Linkedin - Login Cookies
+########################
+
+This LinkedIn API is to login LinkedIn with the help of cookies, when given cookies in the input
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_login_cookie(Cookies='cookies list')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_login_cookie(Cookies);
+
