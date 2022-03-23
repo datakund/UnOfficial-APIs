@@ -1120,3 +1120,37 @@ This API will comment on the post, when given post URL and comment to post in th
         var datakund=require('datakund');
         datakund.linkedin_comment_on_post(post_link,comment);
 
+LinkedIn - Message Scraper
+##########################
+
+When given profile URL, bot scrapes all the messages.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_get_messages(profile_link='https://www.linkedin.com/in/shikha-bhatia-713709154')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_get_messages(profile_link);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "Messegetext": "Amazon Robotics\nComputer Software\n89,564 followers\nFollow\nBoston Dynamics\nComputer Software\n341,804 followers\nFollow\nSharkNinja\nConsumer Goods\n40,194 followers\nFollow"
+    },
+    "errors": "[]"
+    }
+
