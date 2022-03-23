@@ -43,3 +43,24 @@ This amazon API will logout of the amazon account.
         var datakund=require('datakund');
         datakund.amazon_logout(home_url);
 
+Amazon - Search
+###############
+
+This API will search a input keyword given in amazon.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_search(keyword='shoes')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_search(keyword);
+
