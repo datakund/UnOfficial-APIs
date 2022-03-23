@@ -97,45 +97,33 @@ This API scrapes the comments of the post.
         #pip install bot_studio
         from bot_studio import *
         dk=bot_studio.new()
-        dk.linkedin___post___commenters(cookies='cookies list',post_link='https://www.linkedin.com/posts/shikha-bhatia-713709154_programming-python-artificialintelligence-activity-6836184041318866944-erZY/')
+        dk.linkedin___post___commenters(post_link='https://www.linkedin.com/posts/shikha-bhatia-713709154_programming-python-artificialintelligence-activity-6836184041318866944-erZY/')
 
    .. code-tab:: javascript
 		 NodeJS
    
          //npm i datakund
         var datakund=require('datakund');
-        datakund.linkedin___post___commenters(cookies,post_link);
+        datakund.linkedin___post___commenters(post_link);
 
 **Response Data**
 
 .. code-block:: json
 
     {
-    "resume_variable": "6",
-    "success_score": "98",
+    "resume_variable": "n",
+    "success_score": "100",
     "body": [
         {
-            "commentor": "Terence Battles",
-            "comment": "Do you think if I get a job there they could help me get my account back?  \ud83d\ude43\ud83d\ude02"
+            "commentor": "Simran Singh Bansal",
+            "comment": "There are already many other scrappers available in the market which done the same job. How your tool is different from all others?"
         },
         {
-            "commentor": "Abhishek Balawan",
-            "comment": "Hello Nathan, I am enthusiastic about working at @meta. Please go through my profile and let me know if I am suitable for any roles."
-        },
-        {
-            "commentor": "Akshita Aggarwal",
-            "comment": "Its my dream\u2764 maybe one day\u2764"
-        },
-        {
-            "commentor": "Swatika Das",
-            "comment": "Commenting for better reach"
-        },
-        {
-            "commentor": "swati maurya",
-            "comment": "Dreams \ud83e\udd72\ud83d\ude05but trying best to get this\ud83d\ude07"
+            "commentor": "Jairaj Sahgal",
+            "comment": "Wow, this looks awesome. Kudos to developers."
         }
     ],
-    "errors": "[\"'NoneType' object has no attribute 'replace'\"]"
+    "errors": "[]"
     }
 
 LinkedIn - Scrape Company URLs
