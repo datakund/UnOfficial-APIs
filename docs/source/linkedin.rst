@@ -34,14 +34,56 @@ This API scrapes all the sent requests.
         #pip install bot_studio
         from bot_studio import *
         dk=bot_studio.new()
-        dk.linkedin___sent___requests___export(cookies='cookies list')
+        dk.linkedin___sent___requests___export()
 
    .. code-tab:: javascript
 		 NodeJS
    
          //npm i datakund
         var datakund=require('datakund');
-        datakund.linkedin___sent___requests___export(cookies);
+        datakund.linkedin___sent___requests___export();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "name": "Jim D.",
+            "bio": "Wealth Coach at Disciplined Traders",
+            "sent_time": "4 days ago",
+            "profile_link": "https://www.linkedin.com/in/jim-d-45358/"
+        },
+        {
+            "name": "Ryan Daws",
+            "bio": "Wealth Coach at Disciplined Traders",
+            "sent_time": "4 days ago",
+            "profile_link": "https://www.linkedin.com/in/jim-d-45358/"
+        },
+        {
+            "name": "Rachael Reid",
+            "bio": "Wealth Coach at Disciplined Traders",
+            "sent_time": "4 days ago",
+            "profile_link": "https://www.linkedin.com/in/jim-d-45358/"
+        },
+        {
+            "name": "Chris Comer",
+            "bio": "Wealth Coach at Disciplined Traders",
+            "sent_time": "4 days ago",
+            "profile_link": "https://www.linkedin.com/in/jim-d-45358/"
+        },
+        {
+            "name": "Megan Davis",
+            "bio": "Wealth Coach at Disciplined Traders",
+            "sent_time": "4 days ago",
+            "profile_link": "https://www.linkedin.com/in/jim-d-45358/"
+        }
+    ],
+    "errors": "[]"
+    }
 
 LinkedIn - Scrape Post Comments
 ###############################
