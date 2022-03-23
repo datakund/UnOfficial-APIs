@@ -165,3 +165,24 @@ This API when given post URL and comment as input, the bot will visit the post a
         var datakund=require('datakund');
         datakund.instagram__auto__commentor(post url,Add_a_comment);
 
+Instagram - Auto-Follow profiles
+################################
+
+This API will Auto-Follow Instagram profile, when given profile URL as input.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram_autofollow(profile url='https://www.instagram.com/9gag/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram_autofollow(profile url);
+
