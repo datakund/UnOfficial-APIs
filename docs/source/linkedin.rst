@@ -369,14 +369,14 @@ This API will unfollow the profile URL given
         #pip install bot_studio
         from bot_studio import *
         dk=bot_studio.new()
-        dk.linkedin___auto___unfollow(cookies='cookies list',profile_link='https://www.linkedin.com/in/srushtigaur/')
+        dk.linkedin___auto___unfollow()
 
    .. code-tab:: javascript
 		 NodeJS
    
          //npm i datakund
         var datakund=require('datakund');
-        datakund.linkedin___auto___unfollow(cookies,profile_link);
+        datakund.linkedin___auto___unfollow();
 
 LinkedIn - Auto Unconnect Connections
 #####################################
