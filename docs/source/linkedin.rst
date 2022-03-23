@@ -1349,3 +1349,24 @@ when opened a groups search results page, this API will scrape all the group det
     "errors": "[]"
     }
 
+Linkedin - Join Group
+#####################
+
+When given a group URL in the input, this API will request join in the group.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_join_group(group_link='https://www.linkedin.com/groups/126999')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_join_group(group_link);
+
