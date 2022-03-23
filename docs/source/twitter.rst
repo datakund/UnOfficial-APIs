@@ -538,3 +538,24 @@ This Twitter API will login to twitter when given username and password.
         var datakund=require('datakund');
         datakund.twitter_login(username,password);
 
+Twitter - Follow Profile
+########################
+
+When given profile URL in the input, this API will follow the profile.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_follow(profile_url='https://twitter.com/aajtak')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_follow(profile_url);
+
