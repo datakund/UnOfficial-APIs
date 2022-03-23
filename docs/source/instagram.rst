@@ -270,3 +270,71 @@ This Instagram API, when given hashtag in input, it scrapes all the post details
     "errors": "[]"
     }
 
+Instagram - Scrape Post Comments 
+#################################
+
+This API will Scrape comments on the Instagram post.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram__comments(post url='https://www.instagram.com/p/Ca7ytkwgRQQ/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram__comments(post url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "14",
+    "success_score": "100",
+    "body": [
+        {
+            "post likes": "2,288 likes",
+            "post description": "Emotional damage",
+            "title": "wayfarer_ys",
+            "profile url": "https://www.instagram.com/wayfarer_ys/",
+            "posted": "1 w"
+        },
+        {
+            "post likes": "1,401 likes",
+            "post description": "Wait you guys are going to offices \ud83d\ude02",
+            "title": "shashikunwar",
+            "profile url": "https://www.instagram.com/shashikunwar/",
+            "posted": "1 w"
+        },
+        {
+            "post likes": "511 likes",
+            "post description": "Relatable \ud83d\ude02",
+            "title": "iajabkhan",
+            "profile url": "https://www.instagram.com/iajabkhan/",
+            "posted": "1 w"
+        },
+        {
+            "post likes": "531 likes",
+            "post description": "That's most definitely going to be me",
+            "title": "jc",
+            "profile url": "https://www.instagram.com/jc/",
+            "posted": "1 w"
+        },
+        {
+            "post likes": "70 likes",
+            "post description": "Dislike",
+            "title": "judith___c",
+            "profile url": "https://www.instagram.com/judith___c/",
+            "posted": "1 w"
+        }
+    ],
+    "errors": "[]"
+    }
+
