@@ -845,3 +845,24 @@ This LinkedIn API, will scrape job details when given "LinkedIn job Post URL" in
     "errors": "[]"
     }
 
+LinkedIn - Search People
+########################
+
+This API will search a keyword given and applies people filter.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_search_people()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_search_people();
+
