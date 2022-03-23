@@ -106,3 +106,56 @@ It selects the category passed in category when search is made.
         var datakund=require('datakund');
         datakund.amazon_select_category(category);
 
+Amazon - Get Reviews
+####################
+
+It fetches the reviews data from reviews page opened in browser.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_get_reviews()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_get_reviews();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Review Link": "https://www.amazon.com/gp/customer-reviews/RLDWZJJGF7Y6/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B018RLACN8",
+            "Stars": "4.0 out of 5 stars",
+            "Review": "Report abuse"
+        },
+        {
+            "Review Link": "https://www.amazon.com/gp/customer-reviews/RQU9026HV9LKQ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B018RLACN8",
+            "Stars": "5.0 out of 5 stars",
+            "Review": "Report abuse"
+        },
+        {
+            "Review Link": "https://www.amazon.com/gp/customer-reviews/RZG5EBB72LY2T/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B018RLACN8",
+            "Stars": "5.0 out of 5 stars",
+            "Review": "Report abuse"
+        },
+        {
+            "Review Link": "https://www.amazon.com/gp/customer-reviews/R1XTGP7LDLM05H/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B018RLACN8",
+            "Stars": "4.0 out of 5 stars",
+            "Review": "Report abuse"
+        }
+    ],
+    "errors": "[]"
+    }
+
