@@ -1370,3 +1370,43 @@ When given a group URL in the input, this API will request join in the group.
         var datakund=require('datakund');
         datakund.linkedin_join_group(group_link);
 
+LinkedIn - Get Post
+###################
+
+When given post URL in the input, the API will scrape all the details of the post.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_get_post(post_link='https://www.linkedin.com/posts/baljinder-kaur-2a79a4196_helptheneedy-helpinghand-helpifyoucan-activity-6736919400647069696-Bf2o')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_get_post(post_link);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "Post Text": "East Coast Logistics (P) Ltd\n151 followers\nView full page",
+        "UserName": "East Coast Logistics (P) Ltd",
+        "Comments": "I'll share this with...",
+        "Bio": "151 followers",
+        "Time": "3w \u2022\n3 weeks ago",
+        "Likes": "Great opportunity...",
+        "Profile_Link": "https://www.linkedin.com/company/east-coast-logistics/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A31401140"
+    },
+    "errors": "[]"
+    }
+
