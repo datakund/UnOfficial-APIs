@@ -559,3 +559,24 @@ When given profile URL in the input, this API will follow the profile.
         var datakund=require('datakund');
         datakund.twitter_follow(profile_url);
 
+Twitter - Unfollow Profile
+##########################
+
+When given profile URL in the input, this API will unfollow the profile.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_unfollow(profile_url='https://twitter.com/narendramodi')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_unfollow(profile_url);
+
