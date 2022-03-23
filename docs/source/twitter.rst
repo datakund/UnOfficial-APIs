@@ -580,3 +580,46 @@ When given profile URL in the input, this API will unfollow the profile.
         var datakund=require('datakund');
         datakund.twitter_unfollow(profile_url);
 
+Twitter - Profile Details
+#########################
+
+When given twitter profile URL in the input, this API will scrape profile details.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_get_user(profile_url='https://twitter.com/narendramodi')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_get_user(profile_url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "91",
+    "body": {
+        "TweetsCount": "31.4K Tweets",
+        "DOB": "Joined January 2012",
+        "Following": "498",
+        "Website": "https://t.co/mR8AzsmCw2",
+        "Twitter_Id": "@narendramodi",
+        "Info": "Office of the Prime Minister of India",
+        "Followers": "47.5M",
+        "Joined": "Joined January 2012",
+        "Name": "Narendra Modi",
+        "Location": "India"
+    },
+    "errors": "[]"
+    }
+
