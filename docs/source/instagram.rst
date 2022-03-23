@@ -207,3 +207,66 @@ This Bot will Auto-Like post, when given post URL.
         var datakund=require('datakund');
         datakund.instagram_auto_like(post_url);
 
+Instagram - scrape hashtag post details 
+########################################
+
+This Instagram API, when given hashtag in input, it scrapes all the post details relating to it. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram_hashtag(Search='#hair')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram_hashtag(Search);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "11",
+    "success_score": "100",
+    "body": [
+        {
+            "post url": "https://www.instagram.com/p/Cbami9cM0XU/",
+            "profile name": "thiscataura",
+            "post description": "thiscatauraToo cute! \ud83d\ude3b\ud83d\ude0d @thiscatauraTag someone who would adopt them!\ud83d\udcf7: @waffle_n_bekko Follow @thiscatauraFollow @thiscatauraFollow @thiscataura-#catloversclub #catlove #catlover #cats #cat #catmemes #catnoir #cats_of_instagram #catmom #catsofig #catmodel #catsoftheday #cat_features #cats\ud83d\udc31 #catslover #catofinstagram #catphoto #catsagram #catscatscats #catolicos #cats_of_instworld #catlife9 h",
+            "profile url": "https://www.instagram.com/thiscataura/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/Cbai8hBJKRI/",
+            "profile name": "cat_moments_diary",
+            "post description": "cat_moments_diaryNeed Dollar.$$$$$\ud83d\udcb5\ud83d\udc31Don't forget Like \ud83d\udc96 follow @cat_moments_diary ,Comment \ud83d\udcddfor more cute cats \ud83d\udc97and Follow me\ud83d\udc31...Share With Friends ..\ud83d\ude0dTag A Cat Lover \u2764\ufe0f\ud83d\udc31#CrazyCatLady #catloversclub #catsofinstagram #ilovemycat #instagramcats #nature #catoftheday #lovecats #furry #lovekittens #adorable #catlover #instacat #thedailykitten #cat #catsagram #dallascat #instagood #kitten #kitty #pet #animals #petstagram #photooftheday10 h",
+            "profile url": "https://www.instagram.com/cat_moments_diary/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbbQ390MexE/",
+            "profile name": "meowparlour",
+            "post description": "meowparlourGatsby has a lot of opinions about the level of service he is getting here, and he is not afraid of voicing them.3 h",
+            "profile url": "https://www.instagram.com/meowparlour/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbaPwRfqMHW/",
+            "profile name": "the_most_spoiled_cat",
+            "post description": "the_most_spoiled_cat\ud83c\uddee\ud83c\uddf9Un raggio di sole\u2600\ufe0fOgnuno ha qualcosa da scaldare nel suo cuore e da illuminare nella sua mente.\ud83c\uddec\ud83c\udde7A ray of sunshine\u2600\ufe0f...#prayforukraine #raggiodisole #primavera #gattoalsole #gatto #ilmiogatto #amoilmiogatto #cat #catlover #gattoitaliano12 h",
+            "profile url": "https://www.instagram.com/the_most_spoiled_cat/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbbL_ikpsfe/",
+            "profile name": "0308macka",
+            "post description": "0308macka\u2601\u2601\u2601\u2601\u685c\u304c\u54b2\u304d\u59cb\u3081\u305f\u306e\u306b\u2026\u5bd2\u304f\u306a\u3044\u304b\uff1f\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\u305d\u3046\u306d\u3002\u3067\u3082\u305d\u3093\u306a\u306b\u843d\u3061\u8fbc\u307e\u306a\u3044\u3067\u3002\u9031\u672b\u306f\u304d\u3063\u3068\u6696\u304b\u304f\u306a\u3063\u3066\u685c\u3082\u6e80\u958b\u306b\u306a\u308b\u308f\u3088\u3002#\u306a\u3093\u3066\u8a71\u3057\u3066\u306f\u306a\u3044\u3060\u308d\u3046#cat_of_instagram #cat #mygreatcat #britishshorthair #britishshorthairs #\u30d6\u30ea\u30c6\u30a3\u30c3\u30b7\u30e5\u30b7\u30e7\u30fc\u30c8\u30d8\u30a2 #\u732b\u00a0 #\u30d6\u30ea\u30c6\u30a3\u30c3\u30b7\u30e5\u30b7\u30e7\u30fc\u30c8\u30d8\u30a2\u30fc#\u30d6\u30ea\u30b7\u30e7\u30fc #\u3076\u308a\u5546\u4f1a #whitecatsofinstagram #\u3057\u308d\u306d\u3053#\u306d\u3053\u3089\u90e8 #\u767d\u732b#\u732b\u597d\u304d\u3055\u3093\u3068\u7e4b\u304c\u308a\u305f\u3044 #cats #\u3075\u308f\u3082\u3053\u90e8 #ilovecats #catsofinstagram #\u732b\u306e\u3044\u308b\u66ae\u3089\u3057 #\u732b\u3068\u306e\u66ae\u3089\u3057 #\u732b\u597d\u304d\u306a\u4eba\u3068\u7e4b\u304c\u308a\u305f\u3044Edited\u00a0\u00b7\u00a04 h",
+            "profile url": "https://www.instagram.com/0308macka/"
+        }
+    ],
+    "errors": "[]"
+    }
+
