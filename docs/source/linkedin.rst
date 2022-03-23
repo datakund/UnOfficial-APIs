@@ -661,14 +661,14 @@ This API will message the profile when given profile name.
         #pip install bot_studio
         from bot_studio import *
         dk=bot_studio.new()
-        dk.linkedin___message___sender(cookies='cookies list',profile_link='https://www.linkedin.com/in/leilagharani/',Write_a_message='hope you are having a geat day')
+        dk.linkedin___message___sender(profile_link='https://www.linkedin.com/in/leilagharani/',Write_a_message='hope you are having a geat day')
 
    .. code-tab:: javascript
 		 NodeJS
    
          //npm i datakund
         var datakund=require('datakund');
-        datakund.linkedin___message___sender(cookies,profile_link,Write_a_message);
+        datakund.linkedin___message___sender(profile_link,Write_a_message);
 
 LinkedIn Bot - Scrape Connections
 #################################
