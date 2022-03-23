@@ -950,3 +950,51 @@ This API will send connect request to the profile URL given in the input.
         var datakund=require('datakund');
         datakund.linkedin_send_connection(profile_link);
 
+LinkedIn - People Results
+#########################
+
+when opened a people search result page, this API will scrape all the profile URL in the page
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_people_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_people_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Link": "/feed/?doFeedRefresh=true&nis=true"
+        },
+        {
+            "Link": "https://www.linkedin.com/in/sasikiranreddy"
+        },
+        {
+            "Link": "https://www.linkedin.com/in/darshan-kansagara"
+        },
+        {
+            "Link": "https://www.linkedin.com/in/ruqaiyyah-khan-4bb29032"
+        },
+        {
+            "Link": "https://www.linkedin.com/premium/products/?channel=AASAAN&upsellOrderOrigin=premium_people_search_usage_upsell&premiumFeatureType=SEARCH"
+        }
+    ],
+    "errors": "[]"
+    }
+
