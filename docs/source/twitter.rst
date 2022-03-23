@@ -475,3 +475,24 @@ This API will go to twitter profile and scrape media section.
     "errors": "[]"
     }
 
+Twitter - Auto message  
+########################
+
+When given twitter handle, this API messages in twitter.  
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.Twitter__Messenger(Search_people='shikha',input_0='hi')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.Twitter__Messenger(Search_people,input_0);
+
