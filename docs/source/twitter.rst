@@ -662,3 +662,55 @@ This twitter API will scrape all the trending details.
     "errors": "[]"
     }
 
+Twitter - Scraper Followers
+###########################
+
+This twitter API will scrape all the followers details.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_get_followers()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_get_followers();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Link": "/SruthiSings"
+        },
+        {
+            "Info": "Subramanian Swamy@Swamy39Follow",
+            "Link": "/narendramodi"
+        },
+        {
+            "Info": "Subramanian Swamy@Swamy39Follow",
+            "Link": "/narendramodi"
+        },
+        {
+            "Info": "Subramanian Swamy@Swamy39Follow",
+            "Link": "/narendramodi"
+        },
+        {
+            "Info": "Subramanian Swamy@Swamy39Follow",
+            "Link": "/narendramodi"
+        }
+    ],
+    "errors": "[]"
+    }
+
