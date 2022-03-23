@@ -1431,3 +1431,48 @@ When opened a search results page, this API will click load more.
         var datakund=require('datakund');
         datakund.linkedin_click_load_more();
 
+LinkedIn - Posts Links
+######################
+
+When opened search results of posts, this API scrapes all the post URLs.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_posts_links()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_posts_links();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Link": "https://www.linkedin.com/posts/abhishek-vyas-5a985612_great-catching-up-with-hans-fraikin-and-discussing-activity-6911990529782091776-zhlI?utm_source=linkedin_share&utm_medium=member_desktop_web"
+        },
+        {
+            "Link": "https://www.linkedin.com/posts/moonduck-w-08828a227_why-economic-weapons-of-mass-destruction-activity-6911923432590913536-Si2H?utm_source=linkedin_share&utm_medium=member_desktop_web"
+        },
+        {
+            "Link": "https://www.linkedin.com/posts/akhil-rao-30311a188_soundtrack-1-park-hyung-sik-says-he-and-activity-6912316926052438017-CiGn?utm_source=linkedin_share&utm_medium=member_desktop_web"
+        },
+        {
+            "Link": "https://www.linkedin.com/posts/anaghaa_newsletters-marketing-opportunitycost-activity-6912313303927001088-7mHS?utm_source=linkedin_share&utm_medium=member_desktop_web"
+        }
+    ],
+    "errors": "[]"
+    }
+
