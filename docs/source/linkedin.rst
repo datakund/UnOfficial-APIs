@@ -1175,3 +1175,59 @@ When given a input keyword, the API will search the keyword in Linkedin and appl
         var datakund=require('datakund');
         datakund.linkedin_search_companies();
 
+Linkedin - Get Feed
+###################
+
+This API when opened linkedin feed page will scrape all the feed post details.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_get_feed()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_get_feed();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "87",
+    "body": [
+        {
+            "User Name": "Raj Kumar P\n\u2022 2nd",
+            "UserLink": "https://www.linkedin.com/in/raj-kumar-p-9b007149?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAonU1QB_s4oKkBD3dNePJgYqtM-Fpg8okc",
+            "Post Content": ""
+        },
+        {
+            "User Name": "ShareChat for Business",
+            "UserLink": "https://www.linkedin.com/company/sharechat-for-business/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A66714240",
+            "Post Content": "Run Ads in Regional Languages Across Bharat!Why?\u2705Regional language advertising gathers 60% more engagement rate than English content\u270570% of users find regional language content more reliable\u2705With ShareChat Ads, you can advertise your brand in 15 Indic languages and connect with the local audience in the language of their choice.So, what are you waiting for?Sign up on ShareChat Ads today and convert 180Mn+ users into your loyal customers.\n\u2026see more"
+        },
+        {
+            "Post Content": ""
+        },
+        {
+            "User Name": "Maghav Goyal\n\u2022 3rd+",
+            "UserLink": "https://www.linkedin.com/in/maghavgoyal?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAB9ox_kB1DiBFKSuCzQI2ZgCK4DJSr5TRyk",
+            "Post Content": "Status is reachable\nMaghav Goyal\n\u2022 3rd+\nSoftware Engineer at Flipkart | DTU'20\n1w \u2022\n1 week ago\nFollow"
+        },
+        {
+            "User Name": "Namitha Ravindran\n\u2022 3rd+",
+            "UserLink": "https://www.linkedin.com/in/namitha-ravindran-7a4a29222?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADgJeywBvuE47YFgeq_DNVbqZE0ZGYt6F2Q",
+            "Post Content": "Status is offline\nNamitha Ravindran\n\u2022 3rd+\nHR Associate at Tata Consultancy Services\n1w \u2022\n1 week ago"
+        }
+    ],
+    "errors": "[\"'href'\"]"
+    }
+
