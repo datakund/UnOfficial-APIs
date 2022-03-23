@@ -623,3 +623,42 @@ When given twitter profile URL in the input, this API will scrape profile detail
     "errors": "[]"
     }
 
+Twitter - Trending
+##################
+
+This twitter API will scrape all the trending details.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_trending()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_trending();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "keyword": "Entertainment \u00b7 Trending#BhulaDunga11.7K Tweets"
+        },
+        {
+            "keyword": "Entertainment \u00b7 Trending#BoycottRRRinKarnataka11.8K Tweets"
+        }
+    ],
+    "errors": "[]"
+    }
+
