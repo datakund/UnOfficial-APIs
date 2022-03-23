@@ -376,3 +376,51 @@ This API scrapes Instagram profile details, when given Instagram profile URL.
     "errors": "[]"
     }
 
+Instagram - Scrape all post URL in given profile 
+#################################################
+
+This API when given profile URL will scrape all the post URL in the given profile.  
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.instagram__profile__post(profile url='https://www.instagram.com/9gag/')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.instagram__profile__post(profile url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "post url": "https://www.instagram.com/p/CbbVkSJPqDe/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbasU1-PA8k/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbZq7iCA-AD/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbY-Yy1NZym/"
+        },
+        {
+            "post url": "https://www.instagram.com/p/CbYzC8QppiP/"
+        }
+    ],
+    "errors": "[]"
+    }
+
