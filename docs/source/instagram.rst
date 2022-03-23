@@ -122,7 +122,7 @@ This API will scrape all the tagged post URL, when given profile URL in the inpu
 .. code-block:: json
 
     {
-    "resume_variable": "0",
+    "resume_variable": "n",
     "success_score": "100",
     "body": [
         {
