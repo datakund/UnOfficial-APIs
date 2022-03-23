@@ -682,14 +682,61 @@ This LinkedIn API scrapes all the details of your connections when you enter coo
         #pip install bot_studio
         from bot_studio import *
         dk=bot_studio.new()
-        dk.linkedin___contacts___extractor(cookies='cookies list')
+        dk.linkedin___contacts___extractor()
 
    .. code-tab:: javascript
 		 NodeJS
    
          //npm i datakund
         var datakund=require('datakund');
-        datakund.linkedin___contacts___extractor(cookies);
+        datakund.linkedin___contacts___extractor();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "name": "Charita Mavuri",
+            "connect_ago": "Connected2 days ago",
+            "image_link": "https://media-exp1.licdn.com/dms/image/C5603AQE6hETIWs2u3g/profile-displayphoto-shrink_100_100/0/1633835363303?e=1653523200&v=beta&t=P8zrVB13hHm3WmApKfaS4py7Ot_zWysLE8SdFGos0Xk",
+            "title": "Automotive|Telematics|Infotainment|Electric Vehicle|CAN|CANoe|CANalyser",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "PARTH DESAI",
+            "connect_ago": "Connected3 days ago",
+            "image_link": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+            "title": "Automotive|Telematics|Infotainment|Electric Vehicle|CAN|CANoe|CANalyser",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "Bhagya Sree Vallu",
+            "connect_ago": "Connected5 days ago",
+            "image_link": "https://media-exp1.licdn.com/dms/image/C5603AQEeO6wrRunuig/profile-displayphoto-shrink_100_100/0/1627480990489?e=1653523200&v=beta&t=u7MGJtUhFzY7PbFvSLWuCK83jZmCNl11t82Kc8X-55E",
+            "title": "Automotive|Telematics|Infotainment|Electric Vehicle|CAN|CANoe|CANalyser",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "Mounika kolli",
+            "connect_ago": "Connected1 week ago",
+            "image_link": "https://media-exp1.licdn.com/dms/image/C5603AQFDCUkvTsdAfQ/profile-displayphoto-shrink_100_100/0/1625849876907?e=1653523200&v=beta&t=kKt1mcvAVRYTJcdFmVEQ08JS9D1BgWbgLJbujcQdsrQ",
+            "title": "Automotive|Telematics|Infotainment|Electric Vehicle|CAN|CANoe|CANalyser",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        },
+        {
+            "name": "suma t",
+            "connect_ago": "Connected1 week ago",
+            "image_link": "https://media-exp1.licdn.com/dms/image/C5103AQEiKtSaC91bUA/profile-displayphoto-shrink_100_100/0/1538296970796?e=1653523200&v=beta&t=NP-ryMGae5gEUkU2DNt2-ZbPBYQIcg-YO20M8XJbCb4",
+            "title": "Automotive|Telematics|Infotainment|Electric Vehicle|CAN|CANoe|CANalyser",
+            "profile_link": "https://www.linkedin.com/in/charita-mavuri/"
+        }
+    ],
+    "errors": "[]"
+    }
 
 LinkedIn - Profile Scraper 
 ###########################
