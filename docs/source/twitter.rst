@@ -766,3 +766,24 @@ This API will scrape all the retweets in the page opened.
     "errors": "[]"
     }
 
+Twitter - Twitter Links
+#######################
+
+This Twitter API will scrape all the tweet URL in the opened browser
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_get_tweet_links()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_get_tweet_links();
+
