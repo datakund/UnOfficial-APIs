@@ -866,3 +866,24 @@ This API will search a keyword given and applies people filter.
         var datakund=require('datakund');
         datakund.linkedin_search_people();
 
+LinkedIn - Search Jobs
+######################
+
+This API will search a keyword given and applies jobs filter.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_search_jobs()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_search_jobs();
+
