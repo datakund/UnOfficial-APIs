@@ -908,3 +908,24 @@ This API will search a keyword given and applies posts filter.
         var datakund=require('datakund');
         datakund.linkedin_search_posts();
 
+LinkedIn - job Location
+#######################
+
+This API will search a keyword given and applies job filter.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.linkedin_enter_job_location()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.linkedin_enter_job_location();
+
