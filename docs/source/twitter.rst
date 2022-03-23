@@ -27,7 +27,7 @@ This twitter API will scrape all the tweets in the profile URL given in the inpu
 .. code-block:: json
 
     {
-    "resume_variable": "n",
+    "resume_variable": "0",
     "success_score": "100",
     "body": [
         {
@@ -38,21 +38,21 @@ This twitter API will scrape all the tweets in the profile URL given in the inpu
         },
         {
             "tweet": "So heart touching125 Year old Yoga Guru from Kashi, Swami Sivananda receives  Padma Shri for his immense contribution in the field of #Yoga#PadmaAwards #PeoplesPadma#PadmaAwards2022 #PadmaShri",
-            "comments": "806",
-            "retweets": "6,702",
-            "likes": "35.2K"
+            "comments": "808",
+            "retweets": "6,722",
+            "likes": "35.3K"
         },
         {
             "tweet": "Padma Vibhushan conferred to General Bipin Rawat (Posthumous) for Civil Service. Daughters received the award on behalf of their late father (Our Hero). PM @narendramodi Ji has converted Palma Awards into People's Padma.\n#PeoplesPadma #PadmaAwards #PadmaAwards2022 #PadmaShri",
             "comments": "35",
-            "retweets": "406",
-            "likes": "2,907"
+            "retweets": "408",
+            "likes": "2,914"
         },
         {
             "tweet": "Shri Konsam Ibomcha Singh is awarded Padma Shri. He is an expert in Doll and Toys making craft, a traditional craft of Manipur.PM @narendramodi Ji has converted Padma Awards into People's Padma.\n#PeoplesPadma #PadmaAwards #PadmaAwards2022 #PadmaShri",
             "comments": "11",
             "retweets": "43",
-            "likes": "421"
+            "likes": "424"
         },
         {
             "tweet": "",
