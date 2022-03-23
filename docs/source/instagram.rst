@@ -117,6 +117,33 @@ This API will scrape all the tagged post URL, when given profile URL in the inpu
         var datakund=require('datakund');
         datakund.insta__tagged__url(profile url);
 
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": [
+        {
+            "pst url": "https://www.instagram.com/p/BqkyuXbBNzX/"
+        },
+        {
+            "pst url": "https://www.instagram.com/p/BqS7c0IBj1B/"
+        },
+        {
+            "pst url": "https://www.instagram.com/p/BU1S34nF4-G/"
+        },
+        {
+            "pst url": "https://www.instagram.com/p/BKA9231hre4/"
+        },
+        {
+            "pst url": "https://www.instagram.com/p/e8GvQXEH7Y/"
+        }
+    ],
+    "errors": "[]"
+    }
+
 Instagram - Auto Comment Post
 #############################
 
