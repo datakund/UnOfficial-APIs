@@ -159,3 +159,24 @@ It fetches the reviews data from reviews page opened in browser.
     "errors": "[]"
     }
 
+Amazon - Add to Cart
+####################
+
+This Amazon API will add the product to cart, when given product url in the input
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_add_to_cart(product_link='https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=sr_1_6?dchild=1&keywords=earphones&qid=1606549897&sr=8-6')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_add_to_cart(product_link);
+
