@@ -714,3 +714,55 @@ This twitter API will scrape all the followers details.
     "errors": "[]"
     }
 
+Twitter - Get Retweets
+######################
+
+This API will scrape all the retweets in the page opened.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.twitter_get_retweets()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.twitter_get_retweets();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Link": "/narendramodi"
+        },
+        {
+            "Info": "Narendra Modi@narendramodi\u00b7Mar 17\u0d28\u0d3e\u0d33\u0d46 \u0d2e\u0d3e\u0d7c\u0d1a\u0d4d\u0d1a\u0d4d 18\u0d28\u0d4d \u0d30\u0d3e\u0d35\u0d3f\u0d32\u0d46 11 \u0d2e\u0d23\u0d3f\u0d15\u0d4d\u0d15\u0d4d @mathrubhumi \u0d2f\u0d41\u0d1f\u0d46 \u0d36\u0d24\u0d3e\u0d2c\u0d4d\u0d26\u0d3f \u0d06\u0d18\u0d4b\u0d37\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d06\u0d30\u0d02\u0d2d\u0d24\u0d4d\u0d24\u0d3f\u0d7d \u0d1e\u0d3e\u0d7b \u0d2a\u0d19\u0d4d\u0d15\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d41\u0d02.Quote TweetMathrubhumi@mathrubhumi \u00b7 Mar 16Inauguration of Mathrubhumi centenary celebrationsInauguration: Sri @narendramodi , Hon'ble  Prime Minister of India (Live online)Keynote address: Sri @vijayanpinarayi , Hon'ble Chief Minister of Kerala ( online)Venue: Calicut Trade Centre, Kozhikode, KeralaDate: 18.03.20223891,8779,127",
+            "Link": "/narendramodi"
+        },
+        {
+            "Info": "Narendra Modi@narendramodi\u00b7Mar 17\u0d28\u0d3e\u0d33\u0d46 \u0d2e\u0d3e\u0d7c\u0d1a\u0d4d\u0d1a\u0d4d 18\u0d28\u0d4d \u0d30\u0d3e\u0d35\u0d3f\u0d32\u0d46 11 \u0d2e\u0d23\u0d3f\u0d15\u0d4d\u0d15\u0d4d @mathrubhumi \u0d2f\u0d41\u0d1f\u0d46 \u0d36\u0d24\u0d3e\u0d2c\u0d4d\u0d26\u0d3f \u0d06\u0d18\u0d4b\u0d37\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d06\u0d30\u0d02\u0d2d\u0d24\u0d4d\u0d24\u0d3f\u0d7d \u0d1e\u0d3e\u0d7b \u0d2a\u0d19\u0d4d\u0d15\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d41\u0d02.Quote TweetMathrubhumi@mathrubhumi \u00b7 Mar 16Inauguration of Mathrubhumi centenary celebrationsInauguration: Sri @narendramodi , Hon'ble  Prime Minister of India (Live online)Keynote address: Sri @vijayanpinarayi , Hon'ble Chief Minister of Kerala ( online)Venue: Calicut Trade Centre, Kozhikode, KeralaDate: 18.03.20223891,8779,127",
+            "Link": "/SRINADHDHFM"
+        },
+        {
+            "Info": "Narendra Modi@narendramodi\u00b7Mar 17\u0d28\u0d3e\u0d33\u0d46 \u0d2e\u0d3e\u0d7c\u0d1a\u0d4d\u0d1a\u0d4d 18\u0d28\u0d4d \u0d30\u0d3e\u0d35\u0d3f\u0d32\u0d46 11 \u0d2e\u0d23\u0d3f\u0d15\u0d4d\u0d15\u0d4d @mathrubhumi \u0d2f\u0d41\u0d1f\u0d46 \u0d36\u0d24\u0d3e\u0d2c\u0d4d\u0d26\u0d3f \u0d06\u0d18\u0d4b\u0d37\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d06\u0d30\u0d02\u0d2d\u0d24\u0d4d\u0d24\u0d3f\u0d7d \u0d1e\u0d3e\u0d7b \u0d2a\u0d19\u0d4d\u0d15\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d41\u0d02.Quote TweetMathrubhumi@mathrubhumi \u00b7 Mar 16Inauguration of Mathrubhumi centenary celebrationsInauguration: Sri @narendramodi , Hon'ble  Prime Minister of India (Live online)Keynote address: Sri @vijayanpinarayi , Hon'ble Chief Minister of Kerala ( online)Venue: Calicut Trade Centre, Kozhikode, KeralaDate: 18.03.20223891,8779,127",
+            "Link": "/narendramodi"
+        },
+        {
+            "Info": "Narendra Modi@narendramodi\u00b7Mar 17\u0d28\u0d3e\u0d33\u0d46 \u0d2e\u0d3e\u0d7c\u0d1a\u0d4d\u0d1a\u0d4d 18\u0d28\u0d4d \u0d30\u0d3e\u0d35\u0d3f\u0d32\u0d46 11 \u0d2e\u0d23\u0d3f\u0d15\u0d4d\u0d15\u0d4d @mathrubhumi \u0d2f\u0d41\u0d1f\u0d46 \u0d36\u0d24\u0d3e\u0d2c\u0d4d\u0d26\u0d3f \u0d06\u0d18\u0d4b\u0d37\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d06\u0d30\u0d02\u0d2d\u0d24\u0d4d\u0d24\u0d3f\u0d7d \u0d1e\u0d3e\u0d7b \u0d2a\u0d19\u0d4d\u0d15\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d41\u0d02.Quote TweetMathrubhumi@mathrubhumi \u00b7 Mar 16Inauguration of Mathrubhumi centenary celebrationsInauguration: Sri @narendramodi , Hon'ble  Prime Minister of India (Live online)Keynote address: Sri @vijayanpinarayi , Hon'ble Chief Minister of Kerala ( online)Venue: Calicut Trade Centre, Kozhikode, KeralaDate: 18.03.20223891,8779,127",
+            "Link": "/narendramodi"
+        }
+    ],
+    "errors": "[]"
+    }
+
