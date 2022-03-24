@@ -321,3 +321,24 @@ This API will select the bank passed in the input.
         var datakund=require('datakund');
         datakund.amazon_select_bank(bank);
 
+Amazon - Place Order
+####################
+
+API will click on "Place your Order" in amazon 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_place_order()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_place_order();
+
