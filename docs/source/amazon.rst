@@ -180,3 +180,60 @@ This Amazon API will add the product to cart, when given product url in the inpu
         var datakund=require('datakund');
         datakund.amazon_add_to_cart(product_link);
 
+Amazon - Search Result Scraper
+##############################
+
+It scrapes data from amazon search results page.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_search_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_search_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "91",
+    "body": [
+        {
+            "link": "https://aax-eu.amazon.in/x/c/QuW1NdKNp5w9rH9-57vlOs4AAAF_ugM3bgMAAAH2AcEsG6A/https://www.amazon.in/stores/page/23268EDA-C09A-437E-9C65-8359CFB3776C/?_encoding=UTF8&store_ref=SB_A0498819YRLHHKAJWTNY&pd_rd_plhdr=t&aaxitk=b127485a01fb7184e3736bfbe0ee7f09&hsa_cr_id=4165156300502&lp_asins=B095PC3QPV%2CB08SW9W2FY%2CB08T1769X9&lp_query=bag&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_logo&pd_rd_w=ht3e9&pf_rd_p=47ac07ef-304a-41df-a673-0b368707e6c6&pd_rd_wg=Rneg6&pf_rd_r=AR6ADH81F6QWKG8C92W8&pd_rd_r=54b43976-f6c5-458d-93b7-83e0df83867d",
+            "title": "Shop Mokobara",
+            "brand": "Shop Mokobara",
+            "price": ""
+        },
+        {
+            "link": "https://aax-eu.amazon.in/x/c/QuW1NdKNp5w9rH9-57vlOs4AAAF_ugM3bgMAAAH2AcEsG6A/https://www.amazon.in/stores/page/23268EDA-C09A-437E-9C65-8359CFB3776C/?_encoding=UTF8&store_ref=SB_A0498819YRLHHKAJWTNY&pd_rd_plhdr=t&aaxitk=b127485a01fb7184e3736bfbe0ee7f09&hsa_cr_id=4165156300502&lp_asins=B095PC3QPV%2CB08SW9W2FY%2CB08T1769X9&lp_query=bag&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_ls&pd_rd_w=ht3e9&pf_rd_p=47ac07ef-304a-41df-a673-0b368707e6c6&pd_rd_wg=Rneg6&pf_rd_r=AR6ADH81F6QWKG8C92W8&pd_rd_r=54b43976-f6c5-458d-93b7-83e0df83867d",
+            "price": "4,990."
+        },
+        {
+            "title": "Sponsored",
+            "brand": "Sponsored"
+        },
+        {
+            "title": "Northzone Lightweight School Bags Backpacks for Boys Girls Stylish Men and Women Casual Travel Laptop Bag College Office (Navy Blue) 40L",
+            "link": "https://www.amazon.in/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A05394663FX1LMT6O5MZL&url=%2FNorthzone-Polyester-School-Backpack-Compartment%2Fdp%2FB08678P2T7%2Fref%3Dsr_1_1_sspa%3Fcrid%3D32Y73OKYIPT8E%26keywords%3Dbag%26qid%3D1648093247%26sprefix%3Dbag%252Caps%252C294%26sr%3D8-1-spons%26psc%3D1&qualifier=1648093247&id=1860839822434776&widgetName=sp_atf",
+            "price": "549"
+        },
+        {
+            "title": "Northzone Anti Theft Backpack 15.6 Inch Laptop Bag with USB Charging Port and Water Resistant Fabric",
+            "link": "https://www.amazon.in/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A0278458AD6C7QDE1FIA&url=%2FNorthzone-Backpack-Laptop-Charging-Resistant%2Fdp%2FB09LSDD7LY%2Fref%3Dsr_1_2_sspa%3Fcrid%3D32Y73OKYIPT8E%26keywords%3Dbag%26qid%3D1648093247%26sprefix%3Dbag%252Caps%252C294%26sr%3D8-2-spons%26psc%3D1&qualifier=1648093247&id=1860839822434776&widgetName=sp_atf",
+            "price": "549"
+        }
+    ],
+    "errors": "[\"'href'\"]"
+    }
+
