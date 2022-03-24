@@ -258,3 +258,24 @@ This API is automated to click next on the amazon search page
         var datakund=require('datakund');
         datakund.amazon_click_next();
 
+Amazon - Auto Buy
+#################
+
+It goes to product url passed given as input and clicks on buy button.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_buy(product_url='https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=sr_1_6?dchild=1&keywords=earphones&qid=1606552809&sr=8-6')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_buy(product_url);
+
