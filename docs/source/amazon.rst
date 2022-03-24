@@ -279,3 +279,24 @@ It goes to product url given as input and clicks on buy button.
         var datakund=require('datakund');
         datakund.amazon_buy(product_url);
 
+Amazon - Select Payment Method
+##############################
+
+This API will click on the input passed.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_select_payment_method(payment_method='State Bank of India Debit Card')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_select_payment_method(payment_method);
+
