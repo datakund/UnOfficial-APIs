@@ -261,7 +261,7 @@ This API is automated to click next on the amazon search page
 Amazon - Auto Buy
 #################
 
-It goes to product url passed given as input and clicks on buy button.
+It goes to product url given as input and clicks on buy button.
 
 .. tabs::
 
