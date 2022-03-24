@@ -300,3 +300,24 @@ This API will click on the input passed.
         var datakund=require('datakund');
         datakund.amazon_select_payment_method(payment_method);
 
+Amazon - Select Bank
+####################
+
+This API will select the bank passed in the input.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_select_bank(bank='Airtel Payments Bank')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_select_bank(bank);
+
