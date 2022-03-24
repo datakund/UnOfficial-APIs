@@ -237,3 +237,24 @@ It scrapes data from amazon search results page.
     "errors": "[\"'href'\"]"
     }
 
+Amazon - Click Next 
+####################
+
+This API is automated to click next on the amazon search page
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_click_next()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_click_next();
+
