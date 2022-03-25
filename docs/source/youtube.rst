@@ -734,3 +734,24 @@ It play or pause the video playing currently on browser.
         var datakund=require('datakund');
         datakund.youtube_play_pause_video();
 
+YouTube - Play Next Video
+#########################
+
+It clicks on next video to play next video
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_play_next_video()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_play_next_video();
+
