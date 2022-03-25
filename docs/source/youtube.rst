@@ -986,3 +986,24 @@ It will click on hide replies of the comment whose text is passed in comment.
         var datakund=require('datakund');
         datakund.youtube_click_hide_replies(comment);
 
+YouTube - Click Show More Replies
+#################################
+
+It will click on show more replies button in comments section.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_click_show_more_replies()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_click_show_more_replies();
+
