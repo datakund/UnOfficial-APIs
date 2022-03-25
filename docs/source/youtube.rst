@@ -603,3 +603,37 @@ This API scrapes link and title of the videos in watch later list.
     "errors": "[]"
     }
 
+YouTube - Check YouTube Exists
+##############################
+
+It returns title of video passed in video_url if exists, otherwise returns None in title
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_check_video_exists(video_url='https://www.youtube.com/watch?v=8sYK7838927')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_check_video_exists(video_url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "Title": "Naatu Naatu Song (Telugu)| RRR Songs NTR,Ram Charan | MM Keeravaani | SS Rajamouli|Telugu Songs 2021"
+    },
+    "errors": "[]"
+    }
+
