@@ -18,6 +18,7 @@ Welcome to Unofficial-APIs documentation!
    twitter
    amazon
    google
+   youtube
    contactus
 
 Indices and tables
