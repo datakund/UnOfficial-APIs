@@ -637,3 +637,37 @@ It returns title of video passed in video_url if exists, otherwise returns None 
     "errors": "[]"
     }
 
+YouTube - Create Playlist
+#########################
+
+It creates new playlist with the name given in input variable. 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_create_playlist()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_create_playlist();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "playlist_link": "https://www.youtube.com/playlist?list=PL1Hy5whX8xEkFIKVTwc2-U96-zpTMlAgk"
+    },
+    "errors": "[]"
+    }
+
