@@ -415,3 +415,42 @@ This API scrapes link and title of the videos in the playlist passed in playlist
     "errors": "[]"
     }
 
+YouTube - Get Video Tags
+########################
+
+This API scrapes the video tags and tag links whose video link is given in input.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_get_video_tags(video_link='https://www.youtube.com/watch?v=4GnVDPD01as')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_get_video_tags(video_link);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "taglinks": [
+            "https://www.youtube.com/hashtag/komurambheemudo",
+            "https://www.youtube.com/hashtag/rrrmovie",
+            "https://www.youtube.com/hashtag/rrrsongs"
+        ],
+        "tags": "#KomuramBheemudo #RRRMovie #RRRSongs"
+    },
+    "errors": "[]"
+    }
+
