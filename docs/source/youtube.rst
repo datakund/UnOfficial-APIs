@@ -671,3 +671,24 @@ It creates new playlist with the name given in input variable.
     "errors": "[]"
     }
 
+YouTube - Delete Video from Watch latter
+########################################
+
+It deletes the video whose title is passed in title from the watch later videos.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_delete_video_from_watch_later(title='')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_delete_video_from_watch_later(title);
+
