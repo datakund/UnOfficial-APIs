@@ -85,3 +85,24 @@ This API will comment on the YouTube video. Input: YouTube video link and commen
         var datakund=require('datakund');
         datakund.youtube_auto_comment(video_link);
 
+YouTube - Auto Subscribe
+########################
+
+This API will auto subscribe channel in YouTube. Inputs: YouTube channel link.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_auto_subscribe(channel_url='https://www.youtube.com/channel/UCR9sFzaG9Ia_kXJhfxtFMBA')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_auto_subscribe(channel_url);
+
