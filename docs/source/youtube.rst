@@ -127,3 +127,24 @@ This API will watch video for n given seconds.
         var datakund=require('datakund');
         datakund.youtube_watch_video(Video_Url,Time);
 
+YouTube - Video Upload
+######################
+
+This API will upload video, input:  video path, video title, video description, and file type.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_upload(video_path='file path',title='d',description='d',kid_type='Yes, it's Made for Kids',type='Private')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_upload(video_path,title,description,kid_type,type);
+
