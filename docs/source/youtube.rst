@@ -1007,3 +1007,24 @@ It will click on show more replies button in comments section.
         var datakund=require('datakund');
         datakund.youtube_click_show_more_replies();
 
+YouTube - Click View Replies
+############################
+
+It will click on view replies button of the comment whose text is passed in comment.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_click_view_replies(comment='')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_click_view_replies(comment);
+
