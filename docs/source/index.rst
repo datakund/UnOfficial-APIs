@@ -17,6 +17,7 @@ Welcome to Unofficial-APIs documentation!
    facebook
    twitter
    amazon
+   google
    contactus
 
 Indices and tables
