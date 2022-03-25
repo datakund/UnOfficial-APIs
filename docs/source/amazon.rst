@@ -342,3 +342,24 @@ API will click on "Place your Order" in amazon
         var datakund=require('datakund');
         datakund.amazon_place_order();
 
+Amazon - Fill CVV
+#################
+
+This API will fill the CVV in amazon payment page.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_fill_cvv(CVV='w')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_fill_cvv(CVV);
+
