@@ -130,7 +130,7 @@ This API will watch video for n given seconds.
 YouTube - Video Upload
 ######################
 
-This API will upload video, input:  video path, video title, video description, and file type.
+This API will upload video, input:  video path, video title, video description, kid type, public or not and file type.
 
 .. tabs::
 
