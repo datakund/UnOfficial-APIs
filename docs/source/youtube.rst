@@ -64,3 +64,24 @@ This API will like the YouTube Video. Input: YouTube video link
         var datakund=require('datakund');
         datakund.youtube_auto_like(video_url);
 
+YouTube - Auto Comment
+######################
+
+This API will comment on the YouTube video. Input: YouTube video link and comment.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_auto_comment(video_link='https://www.youtube.com/watch?v=4GnVDPD01as')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_auto_comment(video_link);
+
