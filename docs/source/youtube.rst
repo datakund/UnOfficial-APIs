@@ -506,3 +506,55 @@ This API scrapes the title and link of the videos in watch history which is curr
     "errors": "[]"
     }
 
+YouTube - Channel Videos
+########################
+
+This API will scrape video details in the channel from page opened in browser.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_channel_videos()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_channel_videos();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Video_Link": "/watch?v=nvJT6ymY8l4"
+        },
+        {
+            "Title": "Mareyadha Haadugalu Jukebox | Vol 1 | P Kalinga Rao | Kuvempu | Kannada Folk Songs",
+            "Video_Link": "/watch?v=TWQ2FCewRwo"
+        },
+        {
+            "Title": "Mareyadha Haadugalu Jukebox | Vol 1 | P Kalinga Rao | Kuvempu | Kannada Folk Songs",
+            "Video_Link": "/watch?v=Bd4uADxgoS0"
+        },
+        {
+            "Title": "Mareyadha Haadugalu Jukebox | Vol 1 | P Kalinga Rao | Kuvempu | Kannada Folk Songs",
+            "Video_Link": "/watch?v=HkCEdq4eYT8"
+        },
+        {
+            "Title": "Mareyadha Haadugalu Jukebox | Vol 1 | P Kalinga Rao | Kuvempu | Kannada Folk Songs",
+            "Video_Link": "/watch?v=wsdNabb8gNo"
+        }
+    ],
+    "errors": "[]"
+    }
+
