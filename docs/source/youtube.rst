@@ -818,3 +818,24 @@ It replays the video currently playing on browser.
         var datakund=require('datakund');
         datakund.youtube_replay_video();
 
+YouTube - Skip Ad
+#################
+
+It clicks on skip ad button if available.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_skip_ad()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_skip_ad();
+
