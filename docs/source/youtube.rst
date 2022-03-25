@@ -190,3 +190,66 @@ This API will search a given keyboard in YouTube, Input: Keyword.
         var datakund=require('datakund');
         datakund.youtube_search();
 
+YouTube - Search Results
+########################
+
+This API will scrape video details on the search results.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_search_results()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_search_results();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "channel": "funnyplox\nfunnyplox\nVerified",
+            "link": "https://www.youtube.com/watch?v=DXUAyRRkI6k",
+            "title": "Funny Cats and Kittens Meowing Compilation",
+            "viewsandtime": "446M views8 years ago"
+        },
+        {
+            "channel": "Siti Nazihah\nSiti Nazihah",
+            "link": "https://www.youtube.com/shorts/katD5xvV2t8",
+            "title": "Cat crying",
+            "viewsandtime": "19M views1 year ago"
+        },
+        {
+            "channel": "Aww Animals\nAww Animals\nVerified",
+            "link": "https://www.youtube.com/watch?v=ByH9LuSILxU",
+            "title": "Baby Cats - Cute and Funny Cat Videos Compilation #34 | Aww Animals",
+            "viewsandtime": "59M views1 year ago"
+        },
+        {
+            "channel": "Talking Tom\nTalking Tom\nVerified",
+            "link": "https://www.youtube.com/watch?v=jvkW1MKSyOc",
+            "title": "ALL Talking Tom Shorts - Hyper Marathon",
+            "viewsandtime": "571M views4 years ago"
+        },
+        {
+            "channel": "Natural World Triumph\nNatural World Triumph\nVerified",
+            "link": "https://www.youtube.com/watch?v=2MP5Ov_H4Go",
+            "title": "Funny Cats and Kittens Meowing Sound Effects Compilation 2022",
+            "viewsandtime": "71M views1 year ago"
+        }
+    ],
+    "errors": "[]"
+    }
+
