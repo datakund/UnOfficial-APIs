@@ -169,3 +169,24 @@ This API will upload video in playlist, inputs: video path, playlist name, file 
         var datakund=require('datakund');
         datakund.youtube_upload_to_playlist(video_path,title,description,kid_type,playlist,type);
 
+YouTube - Search
+################
+
+This API will search a given keyboard in YouTube, Input: Keyword.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_search()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_search();
+
