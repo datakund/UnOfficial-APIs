@@ -965,3 +965,24 @@ It fetches the comments replies text along with userlink and username currently 
     "errors": "[]"
     }
 
+YouTube - Click Hide Replies
+############################
+
+It will click on hide replies of the comment whose text is passed in comment.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_click_hide_replies(comment='')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_click_hide_replies(comment);
+
