@@ -776,3 +776,24 @@ It forwards the video currently playing on browser with 5 seconds.
         var datakund=require('datakund');
         datakund.youtube_forward_video();
 
+YouTube - Set Playback Speed
+############################
+
+It sets the playback speed passed in speed in the video currently playing on browser.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_set_playback_speed(speed='1.25')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_set_playback_speed(speed);
+
