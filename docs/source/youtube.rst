@@ -341,3 +341,24 @@ This API will get the channel details, input: YouTube channel URL.
     "errors": "[]"
     }
 
+YouTube - Get Transcript 
+#########################
+
+This API will scrape the transcript of video given, input : video URL
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_get_transcript(Video_Url='https://www.youtube.com/watch?v=zIwLWfaAg-8')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_get_transcript(Video_Url);
+
