@@ -363,8 +363,8 @@ This API will fill the CVV in amazon payment page.
         var datakund=require('datakund');
         datakund.amazon_fill_cvv(CVV);
 
-Amazon Product Info
-###################
+Amazon - Product Info
+#####################
 
 This API scrapes product details of the product link given in input.
 
