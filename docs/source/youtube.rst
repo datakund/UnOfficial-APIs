@@ -297,3 +297,47 @@ This API will get the video details, input: YouTube video URL.
     "errors": "[]"
     }
 
+YouTube - Get Channel Info
+##########################
+
+This API will get the channel details, input: YouTube channel URL.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_get_channel_info(channel_link='https://www.youtube.com/c/zeenews/about')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_get_channel_info(channel_link);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "subscribers": "5.69M subscribers",
+        "joined": "",
+        "description": "This funny dog got lost in the rug. Hide and seek champion dog video! Thisfunny dog hid from its owner and could not be found.\nPuppies & Babies & Kitties OH MY! New videos all the time!\n\ud83d\udc49 Subscribe: https://www.tinyurl.com/funnyplox\ud83d\udc49 Submit: http://www.funnyplox.com/submit\nIf you see a clip that you own that you did not submit or give consent foruse, we have likely received false permissions and would be happy to resolve this for you! Please drop us a line at info(@)funnyplox.com\n\ud83d\udc36\ud83d\udc76\ud83d\udc31\n\ud83d\udc49 For every 100 likes, new puppies and kittens are born!\n#funnydog #dogvideos #dog",
+        "location": "",
+        "links": [
+            "https://www.youtube.com/playlist?list=PLvKo-7UxiUK5a-8MTfoo3ffeFvRIpy6bx",
+            "https://www.youtube.com/playlist?list=PLvKo-7UxiUK5a-8MTfoo3ffeFvRIpy6bx",
+            "https://www.youtube.com/watch?v=Jgf19L_mbiY&list=PLvKo-7UxiUK5a-8MTfoo3ffeFvRIpy6bx"
+        ],
+        "title": "funnyplox",
+        "views": ""
+    },
+    "errors": "[]"
+    }
+
