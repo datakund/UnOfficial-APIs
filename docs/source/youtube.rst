@@ -713,3 +713,24 @@ It will click on the video whose title is passed in searchtext.
         var datakund=require('datakund');
         datakund.youtube_find_click_video(searchtext);
 
+YouTube - Play Pause Video
+##########################
+
+It play or pause the video playing currently on browser.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_play_pause_video()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_play_pause_video();
+
