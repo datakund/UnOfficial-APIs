@@ -253,3 +253,47 @@ This API will scrape video details on the search results.
     "errors": "[]"
     }
 
+YouTube - Get Video Info
+########################
+
+This API will get the video details, input: YouTube video URL.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_get_video_info(Video_Url='https://www.youtube.com/watch?v=SUelbSa-OkA')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_get_video_info(Video_Url);
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "0",
+    "success_score": "100",
+    "body": {
+        "ChannelLink": "https://www.youtube.com/channel/UCVUdHi-tdW5AKdzMiTPG97Q",
+        "Desc": "Here is a video of cats and kittens meowing to confuse your pets\nPuppies & Babies & Kitties OH MY! New videos all the time!\n\ud83d\udc49 Subscribe: https://www.tinyurl.com/funnyplox\ud83d\udc49 Twitch: https://www.twitch.tv/funnyplox\ud83d\udc49 Submit: http://www.funnyplox.com/submit\nIf you see a clip that you own that you did not submit or give consent for use, we have likely received false permissions and would be happy to resolve this for you!Please drop us a line at info(@)funnyplox.com\n\ud83d\udc36\ud83d\udc76\ud83c\udffb\ud83d\udc31\n\ud83d\udc49 For every 100 likes, new puppies and kittens are born!\n#cats #funny #funnycatvideos",
+        "Views": "446,914,041 views",
+        "ChannelName": "funnyplox",
+        "DisLikes": "Dislike",
+        "Comments": "6,540 Comments",
+        "Title": "Funny Cats and Kittens Meowing Compilation",
+        "Duration": "4:22",
+        "Likes": "1.7M",
+        "Subscribers": "5.69M subscribers",
+        "Publish_Date": "10 Nov 2013"
+    },
+    "errors": "[]"
+    }
+
