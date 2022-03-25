@@ -106,3 +106,24 @@ This API will auto subscribe channel in YouTube. Inputs: YouTube channel link.
         var datakund=require('datakund');
         datakund.youtube_auto_subscribe(channel_url);
 
+YouTube - Watch Video
+#####################
+
+This API will watch video for n given seconds.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_watch_video(Video_Url='https://www.youtube.com/watch?v=SUelbSa-OkA',Time='')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_watch_video(Video_Url,Time);
+
