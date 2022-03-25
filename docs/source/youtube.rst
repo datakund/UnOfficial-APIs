@@ -558,3 +558,48 @@ This API will scrape video details in the channel from page opened in browser.
     "errors": "[]"
     }
 
+YouTube - Watch Later Videos
+############################
+
+This API scrapes link and title of the videos in watch later list.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_watch_later_videos()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_watch_later_videos();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Title": "RRR Trailer (Telugu) - NTR, Ram Charan, Ajay Devgn, Alia Bhatt | SS Rajamouli | 25th March 2022",
+            "Video_Link": "https://www.youtube.com/watch?v=Gt9WzC4WDEA&list=WL&index=1"
+        },
+        {
+            "Title": "RRR Trailer (Telugu) - NTR, Ram Charan, Ajay Devgn, Alia Bhatt | SS Rajamouli | 25th March 2022",
+            "Video_Link": "https://www.youtube.com/watch?v=dtZ14XTwwos&list=WL&index=2"
+        },
+        {
+            "Title": "RRR Trailer (Telugu) - NTR, Ram Charan, Ajay Devgn, Alia Bhatt | SS Rajamouli | 25th March 2022",
+            "Video_Link": "https://www.youtube.com/watch?v=a_1i3XCB7WY&list=WL&index=3&t=33s"
+        }
+    ],
+    "errors": "[]"
+    }
+
