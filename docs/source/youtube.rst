@@ -755,3 +755,24 @@ It clicks on next video to play next video
         var datakund=require('datakund');
         datakund.youtube_play_next_video();
 
+YouTube - Forward Video
+#######################
+
+It forwards the video currently playing on browser with 5 seconds.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_forward_video()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_forward_video();
+
