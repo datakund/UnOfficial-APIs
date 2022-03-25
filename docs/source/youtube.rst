@@ -148,3 +148,24 @@ This API will upload video, input:  video path, video title, video description, 
         var datakund=require('datakund');
         datakund.youtube_upload(video_path,title,description,kid_type,type);
 
+YouTube - Upload to Playlist
+############################
+
+This API will upload video in playlist, inputs: video path, playlist name, file type, kids.... 
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_upload_to_playlist(video_path='file path',title='d',description='d',kid_type='Yes, it's Made for Kids',playlist='DataKund',type='Private')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_upload_to_playlist(video_path,title,description,kid_type,playlist,type);
+
