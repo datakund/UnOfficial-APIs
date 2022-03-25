@@ -405,3 +405,24 @@ This API scrapes product details of the product link given in input.
     "errors": "[]"
     }
 
+Amazon - Login Cookies
+######################
+
+This API will login amazon account with cookies.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.amazon_login_cookie(Login_Url='https://www.amazon.com',cookies='cookies list')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.amazon_login_cookie(Login_Url,cookies);
+
