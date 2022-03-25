@@ -454,3 +454,55 @@ This API scrapes the video tags and tag links whose video link is given in input
     "errors": "[]"
     }
 
+YouTube - Get Watch History
+###########################
+
+This API scrapes the title and link of the videos in watch history which is currently opened in browser.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_get_watch_history()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_get_watch_history();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "link": "/watch?v=qhWhxe7Wjv0"
+        },
+        {
+            "title": "#RRR - usa lo \u0c0e\u0c28\u0c4d\u0c1f\u0c40\u0c06\u0c30\u0c4d \u0c2b\u0c3e\u0c28\u0c4d\u0c38\u0c4d || usa ntr fans hangamaa",
+            "link": "/watch?v=esw2Wd0jfN0&t=34s"
+        },
+        {
+            "title": "Bheemla Nayak Climax BGM | Bheemla Nayak Climax Fight BGM | Bheemla Nayak BGM Climax | Movie Mastiz",
+            "link": "/watch?v=2ysvJBOglrA"
+        },
+        {
+            "title": "Yazin Nizar about Dosti (Kannada) Song - RRR | M M Keeravaani | NTR, Ram Charan | SS Rajamouli",
+            "link": "/watch?v=IckTwhYnk5c"
+        },
+        {
+            "title": "Vijay Yesudas about Priyam - RRR | Maragathamani | NTR, Ram Charan, Ajay Devgn, Alia | SS Rajamouli",
+            "link": "/watch?v=3GxXrCM6d7s"
+        }
+    ],
+    "errors": "[]"
+    }
+
