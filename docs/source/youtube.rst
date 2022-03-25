@@ -692,3 +692,24 @@ It deletes the video whose title is passed in title from the watch later videos.
         var datakund=require('datakund');
         datakund.youtube_delete_video_from_watch_later(title);
 
+YouTube - Find Click Video
+##########################
+
+It will click on the video whose title is passed in searchtext.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_find_click_video(searchtext='')
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_find_click_video(searchtext);
+
