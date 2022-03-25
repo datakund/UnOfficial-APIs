@@ -839,3 +839,71 @@ It clicks on skip ad button if available.
         var datakund=require('datakund');
         datakund.youtube_skip_ad();
 
+YouTube - Video Comments
+########################
+
+It fetches the comments data like comment text, username, userlink.
+
+.. tabs::
+
+   .. code-tab:: py
+
+        #pip install bot_studio
+        from bot_studio import *
+        dk=bot_studio.new()
+        dk.youtube_video_comments()
+
+   .. code-tab:: javascript
+		 NodeJS
+   
+         //npm i datakund
+        var datakund=require('datakund');
+        datakund.youtube_video_comments();
+
+**Response Data**
+
+.. code-block:: json
+
+    {
+    "resume_variable": "n",
+    "success_score": "100",
+    "body": [
+        {
+            "Comment": "\u0c08 \u0c2a\u0c3e\u0c1f \u0c05\u0c02\u0c1f\u0c47 \u0c0e\u0c02\u0c24 \u0c2e\u0c02\u0c26\u0c3f\u0c15\u0c3f \u0c07\u0c37\u0c4d\u0c1f\u0c02  \u0c25\u0c3f\u0c2f\u0c47\u0c1f\u0c30\u0c4d\u0c32\u0c4b \u0c08 \u0c2a\u0c3e\u0c1f \u0c1a\u0c42\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c41 \u0c2e\u0c3e\u0c2e\u0c42\u0c32\u0c41\u0c17\u0c3e \u0c32\u0c47\u0c26\u0c41",
+            "UserLink": "https://www.youtube.com/channel/UC451QX0ExXUscp9-uTm7KEw",
+            "Time": "1 month ago",
+            "Likes": "5.1K",
+            "user": "YOGI BEATZS"
+        },
+        {
+            "Comment": "\u0c08 \u0c30\u0c4b\u0c1c\u0c41 \u0c2e\u0c3e \u0c0a\u0c30\u0c3f\u0c32\u0c4b \u0c1c\u0c3e\u0c24\u0c30..\u0c08 \u0c38\u0c3e\u0c02\u0c17\u0c4d..\u0c35\u0c47\u0c38\u0c3f \u0c07\u0c02\u0c15\u0c3e \u0c2a\u0c46\u0c15\u0c3e\u0c1f\u0c46 \u0c21\u0c3e\u0c28\u0c4d\u0c38\u0c4d \u0c24\u0c4b...",
+            "UserLink": "https://www.youtube.com/channel/UCFR4c4634t9K_gb2IA0rdCA",
+            "Time": "1 month ago",
+            "Likes": "1.4K",
+            "user": "prasad koppisetti"
+        },
+        {
+            "Comment": "\u0c08 \u0c2a\u0c3e\u0c1f \u0c05\u0c02\u0c1f\u0c47 \u0c0e\u0c02\u0c24 \u0c2e\u0c02\u0c26\u0c3f\u0c15\u0c3f \u0c07\u0c37\u0c4d\u0c1f\u0c02..Dj tillu \u0c05\u0c1f\u0c4d\u0c32\u0c3e \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f \u0c2e\u0c28\u0c4b\u0c21\u0c3f\u0c24\u0c4b",
+            "UserLink": "https://www.youtube.com/channel/UCbcfgNJ6B6AvUyGbmZK14-g",
+            "Time": "1 month ago",
+            "Likes": "1.4K",
+            "user": "SHAIK PSPK"
+        },
+        {
+            "Comment": "Any function, this song needs to be play compulsory! It\u2019s just amazing!!!",
+            "UserLink": "https://www.youtube.com/channel/UC8_aYVdZtjT7dMy5ghpTCvQ",
+            "Time": "2 weeks ago",
+            "Likes": "174",
+            "user": "FunJourneys2608!"
+        },
+        {
+            "Comment": "This song is already rocking in wedding DJ's \ufe0f",
+            "UserLink": "https://www.youtube.com/channel/UCjg4HxfAgI6ztv2mQTclm2Q",
+            "Time": "1 month ago",
+            "Likes": "187",
+            "user": "S Kartik"
+        }
+    ],
+    "errors": "[]"
+    }
+
